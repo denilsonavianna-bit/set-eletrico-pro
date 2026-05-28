@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#c8922a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Set Elétrico PRO">
+    <meta name="application-name" content="Set Elétrico PRO">
+    <meta name="description" content="Set Elétrico PRO — Planejamento elétrico para sets de filmagem. Desenvolvido no Brasil por Denilson Alves Vianna, Diretor de Fotografia.">
+    <meta name="language" content="pt-BR">
+    <meta name="geo.region" content="BR">
+    <meta name="geo.country" content="Brazil">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjogIlNldCBFbFx1MDBlOXRyaWNvIFBSTyIsICJzaG9ydF9uYW1lIjogIlNldCBFbFx1MDBlOXRyaWNvIiwgImRlc2NyaXB0aW9uIjogIlBsYW5lamFtZW50byBlbFx1MDBlOXRyaWNvIHByb2Zpc3Npb25hbCBwYXJhIHNldHMgZGUgZmlsbWFnZW0iLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBhMGEwYSIsICJ0aGVtZV9jb2xvciI6ICIjYzg5MjJhIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU5URXlJaUJvWldsbmFIUTlJalV4TWlJZ2RtbGxkMEp2ZUQwaU1DQXdJRFV4TWlBMU1USWlJSGh0Ykc1elBTSm9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SStDaUFnUEdSbFpuTStDaUFnSUNBOGNtRmthV0ZzUjNKaFpHbGxiblFnYVdROUltSm5JaUJqZUQwaU5UQWxJaUJqZVQwaU5UQWxJaUJ5UFNJMU1DVWlQZ29nSUNBZ0lDQThjM1J2Y0NCdlptWnpaWFE5SWpBbElpQnpkRzl3TFdOdmJHOXlQU0lqTVdFeFlURmhJaTgrQ2lBZ0lDQWdJRHh6ZEc5d0lHOW1abk5sZEQwaU1UQXdKU0lnYzNSdmNDMWpiMnh2Y2owaUl6QmhNR0V3WVNJdlBnb2dJQ0FnUEM5eVlXUnBZV3hIY21Ga2FXVnVkRDRLSUNBZ0lEeHlZV1JwWVd4SGNtRmthV1Z1ZENCcFpEMGlaMjlzWkNJZ1kzZzlJalF3SlNJZ1kzazlJak0xSlNJZ2NqMGlOakFsSWo0S0lDQWdJQ0FnUEhOMGIzQWdiMlptYzJWMFBTSXdKU0lnYzNSdmNDMWpiMnh2Y2owaUkyWXdZekEwTUNJdlBnb2dJQ0FnSUNBOGMzUnZjQ0J2Wm1aelpYUTlJalV3SlNJZ2MzUnZjQzFqYjJ4dmNqMGlJMk00T1RJeVlTSXZQZ29nSUNBZ0lDQThjM1J2Y0NCdlptWnpaWFE5SWpFd01DVWlJSE4wYjNBdFkyOXNiM0k5SWlNNFlUVmpNVEFpTHo0S0lDQWdJRHd2Y21Ga2FXRnNSM0poWkdsbGJuUStDaUFnSUNBOGNtRmthV0ZzUjNKaFpHbGxiblFnYVdROUluSnBibWNpSUdONFBTSTFNQ1VpSUdONVBTSTFNQ1VpSUhJOUlqVXdKU0krQ2lBZ0lDQWdJRHh6ZEc5d0lHOW1abk5sZEQwaU1DVWlJSE4wYjNBdFkyOXNiM0k5SWlOa05HRXdNekFpTHo0S0lDQWdJQ0FnUEhOMGIzQWdiMlptYzJWMFBTSXhNREFsSWlCemRHOXdMV052Ykc5eVBTSWpPR0UxWXpFd0lpOCtDaUFnSUNBOEwzSmhaR2xoYkVkeVlXUnBaVzUwUGdvZ0lDQWdQR1pwYkhSbGNpQnBaRDBpWjJ4dmR5SStDaUFnSUNBZ0lEeG1aVWRoZFhOemFXRnVRbXgxY2lCemRHUkVaWFpwWVhScGIyNDlJalFpSUhKbGMzVnNkRDBpWW14MWNpSXZQZ29nSUNBZ0lDQThabVZOWlhKblpUNDhabVZOWlhKblpVNXZaR1VnYVc0OUltSnNkWElpTHo0OFptVk5aWEpuWlU1dlpHVWdhVzQ5SWxOdmRYSmpaVWR5WVhCb2FXTWlMejQ4TDJabFRXVnlaMlUrQ2lBZ0lDQThMMlpwYkhSbGNqNEtJQ0FnSUR4bWFXeDBaWElnYVdROUluTm9ZV1J2ZHlJK0NpQWdJQ0FnSUR4bVpVUnliM0JUYUdGa2IzY2daSGc5SWpBaUlHUjVQU0kwSWlCemRHUkVaWFpwWVhScGIyNDlJamdpSUdac2IyOWtMV052Ykc5eVBTSWpNREF3SWlCbWJHOXZaQzF2Y0dGamFYUjVQU0l3TGpZaUx6NEtJQ0FnSUR3dlptbHNkR1Z5UGdvZ0lEd3ZaR1ZtY3o0S0NpQWdQQ0V0TFNCR2RXNWtieUJ5YjNWdVpHVmtJSEpsWTNRZ0xTMCtDaUFnUEhKbFkzUWdkMmxrZEdnOUlqVXhNaUlnYUdWcFoyaDBQU0kxTVRJaUlISjRQU0l4TURBaUlHWnBiR3c5SW5WeWJDZ2pZbWNwSWk4K0Nnb2dJRHdoTFMwZ1FXNWxiQ0JsZUhSbGNtNXZJR2R5WVdSMVlXUnZJQzB0UGdvZ0lEeGphWEpqYkdVZ1kzZzlJakkxTmlJZ1kzazlJakkxTmlJZ2NqMGlNakV3SWlCbWFXeHNQU0p1YjI1bElpQnpkSEp2YTJVOUlpTXlZVEl3TURBaUlITjBjbTlyWlMxM2FXUjBhRDBpTXpJaUx6NEtJQ0E4WTJseVkyeGxJR040UFNJeU5UWWlJR041UFNJeU5UWWlJSEk5SWpJeE1DSWdabWxzYkQwaWJtOXVaU0lnYzNSeWIydGxQU0oxY213b0kzSnBibWNwSWlCemRISnZhMlV0ZDJsa2RHZzlJallpQ2lBZ0lDQWdJQ0FnSUNCemRISnZhMlV0WkdGemFHRnljbUY1UFNJNElEWWlJSE4wY205clpTMXNhVzVsWTJGd1BTSnliM1Z1WkNJdlBnb0tJQ0E4SVMwdElFRnVaV3dnYVc1MFpYSnVieUF0TFQ0S0lDQThZMmx5WTJ4bElHTjRQU0l5TlRZaUlHTjVQU0l5TlRZaUlISTlJakUzT0NJZ1ptbHNiRDBpYm05dVpTSWdjM1J5YjJ0bFBTSWpZemc1TWpKaElpQnpkSEp2YTJVdGQybGtkR2c5SWpNaUlHOXdZV05wZEhrOUlqQXVOQ0l2UGdvZ0lEeGphWEpqYkdVZ1kzZzlJakkxTmlJZ1kzazlJakkxTmlJZ2NqMGlNVFUxSWlCbWFXeHNQU0p1YjI1bElpQnpkSEp2YTJVOUlpTmpPRGt5TW1FaUlITjBjbTlyWlMxM2FXUjBhRDBpTVM0MUlpQnZjR0ZqYVhSNVBTSXdMaklpTHo0S0NpQWdQQ0V0TFNCRWFYTmpieUJqWlc1MGNtRnNJRzFsZE1PaGJHbGpieUF0TFQ0S0lDQThZMmx5WTJ4bElHTjRQU0l5TlRZaUlHTjVQU0l5TlRZaUlISTlJakUyTlNJZ1ptbHNiRDBpSXpFeE1TSWdabWxzZEdWeVBTSjFjbXdvSTNOb1lXUnZkeWtpTHo0S0lDQThZMmx5WTJ4bElHTjRQU0l5TlRZaUlHTjVQU0l5TlRZaUlISTlJakUyTUNJZ1ptbHNiRDBpZFhKc0tDTmlaeWtpTHo0S0NpQWdQQ0V0TFNCU1lXbHZJQzhnWW05c2RDQmtiM1Z5WVdSdklDMHRQZ29nSUR4d1lYUm9JR1E5SWsweU9EVWdPVFVnVERFME5TQXlPRFVnVERJek9DQXlPRFVnVERJd01DQTBNakFnVERNMU5TQXlOREFnVERJMk1pQXlOREFnV2lJS0lDQWdJQ0FnSUNCbWFXeHNQU0oxY213b0kyZHZiR1FwSWlCbWFXeDBaWEk5SW5WeWJDZ2paMnh2ZHlraUx6NEtDaUFnUENFdExTQlVaWGgwYnlCVFJWUWdSVXpEaVZSU1NVTlBJQzB0UGdvZ0lEeDBaWGgwSUhnOUlqSTFOaUlnZVQwaU5EWTRJaUIwWlhoMExXRnVZMmh2Y2owaWJXbGtaR3hsSWdvZ0lDQWdJQ0FnSUdadmJuUXRabUZ0YVd4NVBTSkJjbWxoYkNCQ2JHRmpheXdnYzJGdWN5MXpaWEpwWmlJZ1ptOXVkQzEzWldsbmFIUTlJamt3TUNJS0lDQWdJQ0FnSUNCbWIyNTBMWE5wZW1VOUlqTTJJaUJtYVd4c1BTSWpZemc1TWpKaElpQnNaWFIwWlhJdGMzQmhZMmx1WnowaU5pSStVMFZVSUVWTXc0bFVVa2xEVHp3dmRHVjRkRDRLQ2lBZ1BDRXRMU0JDWVdSblpTQlFVazhnTFMwK0NpQWdQSEpsWTNRZ2VEMGlNVGcySWlCNVBTSTBNeklpSUhkcFpIUm9QU0l4TkRBaUlHaGxhV2RvZEQwaU5EUWlJSEo0UFNJNElpQm1hV3hzUFNJall6ZzVNakpoSWk4K0NpQWdQSFJsZUhRZ2VEMGlNalUySWlCNVBTSTBOak1pSUhSbGVIUXRZVzVqYUc5eVBTSnRhV1JrYkdVaUNpQWdJQ0FnSUNBZ1ptOXVkQzFtWVcxcGJIazlJa0Z5YVdGc0lFSnNZV05yTENCellXNXpMWE5sY21sbUlpQm1iMjUwTFhkbGFXZG9kRDBpT1RBd0lnb2dJQ0FnSUNBZ0lHWnZiblF0YzJsNlpUMGlNamdpSUdacGJHdzlJaU13TURBaUlHeGxkSFJsY2kxemNHRmphVzVuUFNJMElqNVFVazg4TDNSbGVIUStDand2YzNablBnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+    <title>SET ELÉTRICO PRO 🇧🇷 — DENILSON ALVES VIANNA</title>
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExYTFhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBhMGEwYSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ29sZCIgY3g9IjQwJSIgY3k9IjM1JSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YwYzA0MCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2M4OTIyYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4YTVjMTAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InJpbmciIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkNGEwMzAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOGE1YzEwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjQiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVNZXJnZT48ZmVNZXJnZU5vZGUgaW49ImJsdXIiLz48ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjgiIGZsb29kLWNvbG9yPSIjMDAwIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBGdW5kbyByb3VuZGVkIHJlY3QgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMDAiIGZpbGw9InVybCgjYmcpIi8+CgogIDwhLS0gQW5lbCBleHRlcm5vIGdyYWR1YWRvIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyYTIwMDAiIHN0cm9rZS13aWR0aD0iMzIiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI3JpbmcpIiBzdHJva2Utd2lkdGg9IjYiCiAgICAgICAgICBzdHJva2UtZGFzaGFycmF5PSI4IDYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKICA8IS0tIEFuZWwgaW50ZXJubyAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE3OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzg5MjJhIiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTU1IiBmaWxsPSJub25lIiBzdHJva2U9IiNjODkyMmEiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIiLz4KCiAgPCEtLSBEaXNjbyBjZW50cmFsIG1ldMOhbGljbyAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE2NSIgZmlsbD0iIzExMSIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE2MCIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBSYWlvIC8gYm9sdCBkb3VyYWRvIC0tPgogIDxwYXRoIGQ9Ik0yODUgOTUgTDE0NSAyODUgTDIzOCAyODUgTDIwMCA0MjAgTDM1NSAyNDAgTDI2MiAyNDAgWiIKICAgICAgICBmaWxsPSJ1cmwoI2dvbGQpIiBmaWx0ZXI9InVybCgjZ2xvdykiLz4KCiAgPCEtLSBUZXh0byBTRVQgRUzDiVRSSUNPIC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDY4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIKICAgICAgICBmb250LXNpemU9IjM2IiBmaWxsPSIjYzg5MjJhIiBsZXR0ZXItc3BhY2luZz0iNiI+U0VUIEVMw4lUUklDTzwvdGV4dD4KCiAgPCEtLSBCYWRnZSBQUk8gLS0+CiAgPHJlY3QgeD0iMTg2IiB5PSI0MzIiIHdpZHRoPSIxNDAiIGhlaWdodD0iNDQiIHJ4PSI4IiBmaWxsPSIjYzg5MjJhIi8+CiAgPHRleHQgeD0iMjU2IiB5PSI0NjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICAgICAgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIgogICAgICAgIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMwMDAiIGxldHRlci1zcGFjaW5nPSI0Ij5QUk88L3RleHQ+Cjwvc3ZnPg==">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Firebase SDK — defer garante carregamento após HTML mas antes de DOMContentLoaded -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <script>
+    // Firebase init — executa imediatamente após os scripts acima
+    window._fbConfig = {
+        apiKey: "AIzaSyDDbJrniP3k8QkpDq47w5tRTTI-ty_NeFg",
+        authDomain: "set-eletrico-pro.firebaseapp.com",
+        databaseURL: "https://set-eletrico-pro-default-rtdb.firebaseio.com",
+        projectId: "set-eletrico-pro",
+        storageBucket: "set-eletrico-pro.firebasestorage.app",
+        messagingSenderId: "252614674360",
+        appId: "1:252614674360:web:236ebcc330d6f80703314d",
+        measurementId: "G-6KYXYG9V65"
+    };
+    function _initFirebase() {
+        try {
+            if (typeof firebase === 'undefined') { window.db = null; console.warn("Firebase SDK nao carregado"); return; }
+            if (!firebase.apps.length) firebase.initializeApp(window._fbConfig);
+            window.db = firebase.database();
+            console.log("Firebase conectado OK");
+        } catch(e) {
+            console.warn("Firebase offline:", e.message);
+            window.db = null;
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', _initFirebase);
+    } else {
+        _initFirebase();
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        :root{ --gold:#c8922a; --gold-dim:#8a6218; --bg:#0a0a0a; --surface:#141414; --border:#262626; --text:#ede0c4; }
+        *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; margin:0; padding:0; }
+        body{ background:var(--bg); color:var(--text); font-family:'DM Mono',monospace; font-size:14px; padding:12px; padding-top:330px; }
+
+        header{ position:fixed; top:0; left:0; right:0; background:#000; border-bottom:2px solid var(--gold); padding:8px 12px; z-index:1000; box-shadow:0 4px 20px rgba(0,0,0,0.8); }
+        .brand-container{ display:flex; align-items:center; justify-content:center; gap:7px; margin-bottom:1px; }
+        .logo-bolt{ width:17px; height:17px; fill:var(--gold); }
+        .product-title{ font-family:'Syne',sans-serif; color:var(--gold); font-size:1.0rem; letter-spacing:3px; text-transform:uppercase; font-weight:800; }
+        .branding-bar{ text-align:center; font-size:0.56rem; color:#a3a3a3; letter-spacing:2px; text-transform:uppercase; margin-bottom:5px; font-weight:700; }
+        .branding-bar span{ color:#fff; }
+
+        .config-block{ display:flex; flex-direction:column; gap:2px; margin-bottom:5px; background:#111; padding:4px 6px; border-radius:4px; border:1px solid #222; }
+        .config-bar{ display:flex; align-items:center; justify-content:space-between; font-size:0.58rem; min-height:23px; }
+        .config-bar select,
+        .config-bar input[type="text"],
+        .config-bar input[type="email"],
+        .config-bar input[type="tel"]{
+            background:#000; color:var(--gold); border:1px solid var(--gold);
+            font-family:inherit; font-size:0.58rem; padding:3px 5px;
+            border-radius:4px; outline:none; font-weight:bold; width:58%;
+        }
+        .config-bar input::placeholder{ color:#555; }
+        .config-divider{ border:none; border-top:1px solid #222; margin:1px 0; }
+
+        .stats-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:3px; }
+        .stat-card{ background:var(--surface); border:1px solid var(--border); padding:5px 2px; border-radius:6px; text-align:center; }
+        .stat-card.alert{ border-color:#ef4444; background:#2d0a0a; }
+        .stat-card.energy{ border-color:#164e63; background:#082030; }
+        .stat-label{ font-size:0.46rem; text-transform:uppercase; color:#737373; margin-bottom:2px; font-weight:700; }
+        .stat-value{ font-size:0.75rem; font-weight:700; color:var(--gold); }
+        .stat-card.energy .stat-value{ color:#38bdf8; }
+
+        .safety-bar{ background:#121212; border-left:3px solid var(--gold); padding:5px 10px; margin-bottom:8px; font-size:0.58rem; color:#a3a3a3; line-height:1.4; }
+        .safety-bar.danger{ border-color:#ef4444; background:#1a0a0a; }
+        .safety-bar.warn{ border-color:#f59e0b; background:#141008; }
+
+        .dist-panel{ background:#0d0d0d; border:1px solid #2a2200; border-radius:8px; padding:10px; margin-bottom:12px; }
+        .dist-panel-title{ font-family:'Syne',sans-serif; font-size:0.66rem; text-transform:uppercase; color:var(--gold); margin-bottom:8px; padding-bottom:4px; border-bottom:1px solid #2a2200; letter-spacing:1px; display:flex; justify-content:space-between; align-items:center; }
+        .dist-panel-title small{ font-family:'DM Mono',monospace; font-size:0.52rem; color:#737373; font-weight:400; text-transform:none; letter-spacing:0; }
+        .circuit-card{ background:#111; border:1px solid #2a2200; border-radius:6px; padding:7px 9px; margin-bottom:6px; }
+        .circuit-card.c-ok  { border-left:3px solid #22c55e; }
+        .circuit-card.c-warn{ border-left:3px solid #f59e0b; }
+        .circuit-card.c-crit{ border-left:3px solid #ef4444; }
+        .circuit-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; }
+        .circuit-id{ font-family:'Syne',sans-serif; font-size:0.62rem; font-weight:800; color:var(--gold); }
+        .circuit-badge{ font-size:0.50rem; font-weight:700; padding:2px 7px; border-radius:10px; }
+        .badge-ok  { background:#052e16; color:#4ade80; border:1px solid #166534; }
+        .badge-warn{ background:#1c1400; color:#fbbf24; border:1px solid #92400e; }
+        .badge-crit{ background:#2d0a0a; color:#f87171; border:1px solid #7f1d1d; }
+        .circuit-specs{ display:grid; grid-template-columns:repeat(3,1fr); gap:3px; margin-bottom:4px; }
+        .cspec{ background:#0a0a0a; border-radius:3px; padding:3px 5px; text-align:center; }
+        .cspec-label{ font-size:0.44rem; color:#555; text-transform:uppercase; font-weight:700; }
+        .cspec-val{ font-size:0.60rem; font-weight:700; color:#fff; }
+        .circuit-items{ font-size:0.44rem; color:#737373; line-height:1.5; border-top:1px solid #1a1a1a; padding-top:3px; }
+        .circuit-items b{ color:#a3a3a3; }
+        .circuit-bar-wrap{ background:#1a1a1a; border-radius:2px; height:6px; overflow:hidden; margin-top:4px; }
+        .circuit-bar{ height:100%; border-radius:2px; transition:width 0.3s; }
+        .circuit-bar.ok  { background:#22c55e; }
+        .circuit-bar.warn{ background:#f59e0b; }
+        .circuit-bar.crit{ background:#ef4444; }
+        .dist-warn-box{ background:#140e00; border:1px solid #92400e; border-radius:5px; padding:7px 10px; margin-top:6px; font-size:0.54rem; color:#fbbf24; line-height:1.5; }
+        .dist-warn-box.danger{ background:#140000; border-color:#7f1d1d; color:#f87171; }
+        .dist-note{ font-size:0.52rem; color:#555; margin-top:5px; line-height:1.6; border-top:1px solid #1a1a1a; padding-top:4px; }
+        .dist-note b{ color:#737373; }
+        .ref-list{ margin-top:5px; border-top:1px solid #1a1a1a; padding-top:4px; display:flex; flex-direction:column; gap:2px; }
+        .ref-line{ display:flex; align-items:baseline; gap:5px; font-size:0.54rem; line-height:1.6; }
+        .ref-arrow{ color:var(--gold); font-weight:900; flex-shrink:0; }
+        .ref-name{ color:#e5e5e5; flex:1; }
+        .ref-metrics{ color:#737373; white-space:nowrap; font-size:0.50rem; }
+        .circuit-tip{ margin-top:5px; font-size:0.51rem; color:#a3a3a3; background:#0d0d0d; border-left:2px solid var(--gold-dim); padding:3px 6px; border-radius:2px; line-height:1.4; }
+
+        .m-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-bottom:12px; }
+        .m-btn{ background:var(--surface); border:1px solid var(--border); color:#a3a3a3; padding:8px 1px; border-radius:6px; font-size:0.54rem; font-weight:700; cursor:pointer; text-transform:uppercase; text-align:center; white-space:nowrap; overflow:hidden; }
+        .m-btn.active{ border-color:var(--gold); color:var(--gold); background:#1c140a; }
+
+        .equip-page{ display:none; background:#0b0b0b; border:1px solid var(--border); padding:8px; border-radius:8px; margin-bottom:12px; }
+        .equip-page.active{ display:block; animation:fadeIn 0.15s ease-out; }
+        .page-label{ font-size:0.54rem; font-weight:700; text-transform:uppercase; margin-bottom:6px; padding-bottom:4px; border-bottom:1px solid #1e1e1e; }
+        .equip-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
+        .equip-btn{ background:var(--surface); border:1px solid #262626; padding:9px 2px; border-radius:6px; color:#fff; text-align:center; cursor:pointer; transition:border-color 0.1s; }
+        .equip-btn:active{ border-color:var(--gold); background:#1c140a; }
+        .equip-btn span{ display:block; font-size:0.58rem; font-weight:700; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+        .equip-btn small{ display:block; font-size:0.52rem; color:var(--gold); margin-top:2px; }
+
+        .manual-form{ display:flex; flex-direction:column; gap:6px; }
+        .manual-inputs{ display:flex; gap:4px; }
+        .manual-inputs input{ background:#000; color:#fff; border:1px solid #404040; padding:7px; border-radius:6px; font-family:inherit; font-size:0.61rem; outline:none; width:100%; }
+
+        #voltageModal{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:5000; align-items:center; justify-content:center; padding:20px; }
+        .modal-card{ background:#141414; border:2px solid var(--gold); border-radius:8px; padding:20px; width:100%; max-width:300px; text-align:center; }
+        .modal-title{ font-family:'Syne',sans-serif; font-size:0.7rem; text-transform:uppercase; color:var(--gold); margin-bottom:10px; font-weight:800; line-height:1.3; }
+        .modal-sub{ font-size:0.56rem; color:#a3a3a3; margin-bottom:13px; }
+        .modal-btn-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+        .v-btn{ background:#262626; color:#fff; border:1px solid #444; padding:12px; border-radius:6px; font-family:inherit; font-weight:700; font-size:0.8rem; cursor:pointer; }
+        .v-btn:active{ background:var(--gold); color:#000; }
+
+        .item-row{ background:var(--surface); padding:7px 10px; border-radius:6px; margin-bottom:5px; display:flex; justify-content:space-between; align-items:center; border-left:3px solid var(--gold); }
+        .item-meta{ font-size:0.57rem; color:#a3a3a3; margin-top:2px; }
+        .qty-controls{ display:flex; align-items:center; gap:9px; }
+        .qty-btn{ background:var(--gold); color:#000; border:none; width:25px; height:25px; border-radius:6px; font-weight:900; cursor:pointer; font-size:0.85rem; display:flex; align-items:center; justify-content:center; }
+
+        .summary-dashboard{ background:#111; border:1px solid var(--border); border-radius:6px; padding:9px 11px; margin-top:12px; margin-bottom:12px; }
+        .summary-dashboard h3{ font-family:'Syne',sans-serif; font-size:0.68rem; text-transform:uppercase; letter-spacing:1px; color:var(--gold); margin-bottom:6px; border-bottom:1px solid var(--border); padding-bottom:3px; }
+        .summary-line{ display:flex; justify-content:space-between; font-size:0.62rem; margin-bottom:4px; color:#c5c5c5; }
+        .summary-line span{ font-weight:bold; color:#fff; }
+        .summary-line.energy span{ color:#38bdf8; }
+
+        #lockScreen{ position:fixed; inset:0; background:var(--bg); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; }
+        .pass-wrap{ position:relative; width:260px; margin-bottom:12px; }
+        .pass-wrap input[type="password"],
+        .pass-wrap input[type="text"]{
+            background:#111; border:1px solid var(--gold); color:#fff;
+            padding:16px 44px 16px 16px; width:100%; border-radius:8px;
+            text-align:center; outline:none; font-family:monospace; font-size:18px; letter-spacing:4px;
+        }
+        .eye-btn{ position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--gold); font-size:1rem; padding:4px; line-height:1; }
+        .btn-main{ background:var(--gold); color:#000; border:none; padding:13px; border-radius:8px; font-family:'Syne',sans-serif; font-weight:800; text-transform:uppercase; width:100%; font-size:0.78rem; cursor:pointer; letter-spacing:2px; }
+
+        footer{ text-align:center; padding:18px; opacity:0.4; font-size:0.54rem; letter-spacing:2px; text-transform:uppercase; border-top:1px solid #1a1a1a; margin-top:28px; }
+        .dev-note{ font-size:0.42rem; color:#404040; margin-top:5px; text-transform:none; letter-spacing:0; font-family:sans-serif; }
+
+        @keyframes fadeIn{ from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
+        .cat-item{ background:var(--surface); border:1px solid #1a2a1a; border-left:3px solid #38bdf8; border-radius:5px; padding:6px 9px; display:flex; justify-content:space-between; align-items:center; gap:6px; }
+        .cat-item-info{ flex:1; }
+        .cat-item-name{ font-size:0.58rem; font-weight:700; color:#fff; }
+        .cat-item-meta{ font-size:0.50rem; color:#737373; margin-top:1px; }
+        .cat-del-btn{ background:#2d0a0a; border:1px solid #7f1d1d; color:#f87171; padding:3px 8px; border-radius:4px; font-size:0.50rem; cursor:pointer; font-weight:700; white-space:nowrap; }
+        .cat-use-btn{ background:#1c140a; border:1px solid var(--gold-dim); color:var(--gold); padding:3px 8px; border-radius:4px; font-size:0.50rem; cursor:pointer; font-weight:700; white-space:nowrap; }
+
+        @media print{
+            header,.m-grid,.equip-page,.qty-controls,footer,
+            .m-btn,.btn-main,.config-block,.safety-bar,#itemList,
+            .summary-dashboard,#voltageModal,.dist-panel{ display:none !important; }
+            body{ padding:0; background:#fff !important; color:#000 !important; }
+            #printArea{ display:block !important; color:#000; padding:10px; }
+            .print-header{ display:flex; justify-content:space-between; align-items:flex-start; border-bottom:4px solid #000; padding-bottom:13px; margin-bottom:10px; }
+            .print-title{ font-family:'Syne',sans-serif; font-size:1.4rem; text-transform:uppercase; font-weight:800; letter-spacing:1px; }
+            .print-sub{ font-size:0.62rem; margin-top:3px; font-weight:700; letter-spacing:1px; color:#555; }
+            .print-meta{ margin-bottom:7px; font-size:0.7rem; font-weight:bold; border-bottom:1px solid #000; padding-bottom:4px; text-transform:uppercase; display:flex; flex-wrap:wrap; gap:8px; justify-content:space-between; }
+            .print-contact-block{ font-size:0.6rem; margin-bottom:8px; padding:5px 0; border-bottom:1px dashed #aaa; display:flex; gap:18px; flex-wrap:wrap; }
+            table{ width:100%; border-collapse:collapse; margin-top:8px; font-size:9.5px; }
+            th,td{ border:1px solid #000; padding:5px; text-align:left; }
+            th{ background:#f0f0f0 !important; font-weight:700; }
+            #pFooter{ margin-top:14px; font-weight:bold; border:2px solid #000; padding:11px; font-size:0.72rem; line-height:1.6; }
+            #printCircuits{ display:block !important; margin-top:14px; border:2px solid #000; padding:11px; font-size:0.65rem; line-height:1.7; }
+        }
+        #printArea{ display:none; }
+        #printCircuits{ display:none; }
+    </style>
+
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen">
+    <svg style="width:80px;height:80px;margin-bottom:12px;filter:drop-shadow(0 0 12px #c8922a88);" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="lgBg" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#1a1a1a"/>
+          <stop offset="100%" stop-color="#0a0a0a"/>
+        </radialGradient>
+        <radialGradient id="lgGold" cx="40%" cy="35%" r="60%">
+          <stop offset="0%" stop-color="#f0c040"/>
+          <stop offset="50%" stop-color="#c8922a"/>
+          <stop offset="100%" stop-color="#8a5c10"/>
+        </radialGradient>
+      </defs>
+      <circle cx="256" cy="256" r="252" fill="url(#lgBg)" stroke="#c8922a" stroke-width="8"/>
+      <circle cx="256" cy="256" r="230" fill="none" stroke="#c8922a" stroke-width="2"
+              stroke-dasharray="10 7" opacity="0.5"/>
+      <path d="M285 95 L145 285 L238 285 L200 420 L355 240 L262 240 Z" fill="url(#lgGold)"/>
+    </svg>
+    <div style="font-family:'Syne',sans-serif;color:var(--gold);letter-spacing:4px;margin-bottom:6px;font-size:0.8rem;font-weight:800;text-align:center;">SET ELÉTRICO PRO</div>
+    <div style="font-size:0.48rem;color:#555;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Denilson Alves Vianna · DP</div>
+    <div style="font-size:0.52rem;color:#009c3b;letter-spacing:1px;margin-bottom:12px;font-weight:700;">🇧🇷 Produto Brasileiro · Desenvolvido no Brasil</div>
+
+    <div style="
+        max-width:300px;width:90%;
+        background:#0f0f00;
+        border:1px solid #92400e;
+        border-left:3px solid #f59e0b;
+        border-radius:6px;
+        padding:10px 12px;
+        margin-bottom:16px;
+        text-align:left;
+    ">
+        <div style="font-family:'Syne',sans-serif;font-size:0.52rem;font-weight:800;color:#f59e0b;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">
+            ⚠ Aviso de Responsabilidade Técnica
+        </div>
+        <div style="font-size:0.44rem;color:#d4a84b;line-height:1.6;">
+            Este aplicativo é uma <b style="color:#fff;">ferramenta auxiliar de planejamento elétrico</b> para sets de filmagem. Os cálculos, dimensionamentos e recomendações apresentados são baseados na NBR 5410 e nos dados inseridos pelo usuário, podendo conter imprecisões decorrentes de limitações do software, dados incorretos ou condições de campo não previstas.<br><br>
+            <b style="color:#fff;">O uso desta ferramenta não substitui, em nenhuma hipótese, a avaliação presencial, o julgamento técnico e a responsabilidade legal do Técnico ou Engenheiro Elétrico habilitado</b> pelo sistema elétrico do set.<br><br>
+            Toda instalação deve ser inspecionada, validada e liberada por profissional legalmente responsável antes da energização. <b style="color:#ef4444;">O autor do software não se responsabiliza por danos materiais, pessoais ou acidentes decorrentes do uso desta ferramenta.</b>
+        </div>
+    </div>
+
+    <!-- CONTADOR DEMO -->
+    <div id="demoCounter" style="display:none;background:#0f0f00;border:1px solid #f59e0b;border-radius:6px;padding:6px 14px;margin-bottom:10px;text-align:center;font-size:0.54rem;color:#f59e0b;max-width:260px;width:90%;"></div>
+
+    <!-- TABS: DEMO | SENHA COMPRADA -->
+    <div style="display:flex;gap:0;max-width:260px;width:90%;margin-bottom:10px;border:1px solid #333;border-radius:8px;overflow:hidden;">
+        <button id="tabDemo" onclick="switchTab('demo')"
+            style="flex:1;padding:9px;background:#1a1a00;color:#f59e0b;border:none;font-family:'Syne',sans-serif;font-weight:800;font-size:0.54rem;cursor:pointer;letter-spacing:1px;">
+            DEMO GRATUITO
+        </button>
+        <button id="tabPago" onclick="switchTab('pago')"
+            style="flex:1;padding:9px;background:#1a0a00;color:#c8922a;border:none;font-family:'Syne',sans-serif;font-weight:800;font-size:0.54rem;cursor:pointer;letter-spacing:1px;border-left:1px solid #333;">
+            JÁ COMPREI
+        </button>
+    </div>
+
+    <!-- PAINEL DEMO -->
+    <div id="panelDemo" style="max-width:260px;width:90%;display:block;">
+        <div style="font-size:0.48rem;color:#737373;text-align:center;margin-bottom:10px;line-height:1.5;">
+            Experimente 3 vezes gratuitamente.<br>Sem necessidade de senha.
+        </div>
+        <button class="btn-main" style="max-width:260px;background:#f59e0b;color:#000;" onclick="entrarDemo()">
+            EXPERIMENTAR GRÁTIS
+        </button>
+        <div style="margin-top:10px;text-align:center;">
+            <button onclick="verPix()" style="background:none;border:none;color:#c8922a;font-size:0.52rem;font-family:inherit;cursor:pointer;text-decoration:underline;">
+                Adquirir versão completa — R$ 50,00
+            </button>
+        </div>
+    </div>
+
+    <!-- PAINEL SENHA COMPRADA -->
+    <div id="panelPago" style="max-width:260px;width:90%;display:none;">
+        <div class="pass-wrap">
+            <input type="password" id="passKey" placeholder="DV-XXXX-XXXX" autocomplete="off"
+                style="letter-spacing:2px;text-transform:uppercase;"
+                onkeydown="if(event.key==='Enter') unlock()"
+                oninput="this.value=this.value.toUpperCase()">
+            <button class="eye-btn" id="eyeBtn" onclick="togglePass()" title="Mostrar/Ocultar senha">👁</button>
+        </div>
+        <button class="btn-main" style="max-width:260px;" onclick="unlock()">ATIVAR LICENÇA</button>
+        <div id="lockMsg" style="margin-top:8px;font-size:0.50rem;color:#ef4444;text-align:center;min-height:16px;"></div>
+    </div>
+
+    <!-- MODAL PIX -->
+    <div id="pixModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;align-items:center;justify-content:center;flex-direction:column;padding:20px;">
+        <div style="background:#141414;border:2px solid var(--gold);border-radius:12px;padding:20px;max-width:300px;width:100%;text-align:center;">
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.75rem;font-weight:800;margin-bottom:4px;letter-spacing:2px;">ADQUIRIR LICENÇA</div>
+            <div style="font-size:0.54rem;color:#a3a3a3;margin-bottom:14px;">SET ELÉTRICO PRO — R$ 50,00</div>
+            <div style="background:#fff;padding:12px;border-radius:8px;margin-bottom:12px;display:inline-block;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=00020126580014br.gov.bcb.pix0136011487207400520400005303986540550.005802BR5922DENILSON+ALVES+VIANNA6009SAO+PAULO62070503***6304" width="160" height="160" alt="QR Code PIX" style="display:block;">
+            </div>
+            
+            <div style="font-size:0.46rem;color:#555;margin-bottom:14px;line-height:1.5;">Após o pagamento, a senha será<br>enviada via WhatsApp em até 1h.</div>
+            <button onclick="document.getElementById('pixModal').style.display='none'"
+                style="background:var(--gold);color:#000;border:none;padding:10px 20px;border-radius:6px;font-family:'Syne',sans-serif;font-weight:800;font-size:0.62rem;cursor:pointer;width:100%;">
+                FECHAR
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- VOLTAGE MODAL -->
+<div id="voltageModal">
+    <div class="modal-card">
+        <div class="modal-title" id="vModalTitle">Tensão do Refletor</div>
+        <div class="modal-sub">Selecione a voltagem de trabalho para o cálculo de amperagem:</div>
+        <div class="modal-btn-grid">
+            <button class="v-btn" onclick="confirmVoltage(127)">127 V</button>
+            <button class="v-btn" onclick="confirmVoltage(220)">220 V</button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" style="display:none;">
+    <header>
+        <div class="brand-container">
+            <svg class="logo-bolt" viewBox="0 0 512 512">
+    <defs>
+      <radialGradient id="boltGold" cx="40%" cy="35%" r="60%">
+        <stop offset="0%" stop-color="#f0c040"/>
+        <stop offset="100%" stop-color="#8a5c10"/>
+      </radialGradient>
+    </defs>
+    <path d="M280 120 L140 320 L240 320 L200 480 L340 280 L240 280 Z" fill="url(#boltGold)"/>
+  </svg>
+            <div class="product-title">SET ELÉTRICO PRO</div>
+        </div>
+        <div class="branding-bar" style="display:flex;justify-content:center;align-items:center;gap:8px;">
+            <span>Propriedade: <span style="color:#fff;">Denilson Alves Vianna</span> — DP</span>
+            <span style="color:#009c3b;">🇧🇷</span>
+            <span id="licenseBadge" style="font-size:0.44rem;font-weight:700;padding:1px 5px;border-radius:4px;background:#1a1a1a;border:1px solid #333;"></span>
+        </div>
+        <div class="config-block">
+            <div class="config-bar">
+                <div>👤 Responsável:</div>
+                <input type="text" id="projectResp" placeholder="Nome do Operador" oninput="updateContacts()">
+            </div>
+            <hr class="config-divider">
+            <div class="config-bar">
+                <div>📱 Celular / WhatsApp:</div>
+                <input type="tel" id="projectPhone" placeholder="(21) 99999-9999" oninput="updateContacts()">
+            </div>
+            <div class="config-bar">
+                <div>✉️ E-mail:</div>
+                <input type="email" id="projectEmail" placeholder="contato@email.com" oninput="updateContacts()">
+            </div>
+            <hr class="config-divider">
+            <div class="config-bar">
+                <div>🔌 Linha Principal:</div>
+                <select id="lineVoltageSelect" onchange="render()">
+                    <option value="220">Bifásico / Trifásico (220V)</option>
+                    <option value="127">Monofásico / Bifásico (127V)</option>
+                </select>
+            </div>
+            <div class="config-bar">
+                <div>🏢 Concessionária:</div>
+                <div style="display:flex;gap:4px;width:58%;">
+                    <select id="operatorSelect" onchange="render()" style="flex:1;background:#000;color:var(--gold);border:1px solid var(--gold);font-family:inherit;font-size:0.58rem;padding:3px 5px;border-radius:4px;outline:none;font-weight:bold;"></select>
+                    <button onclick="abrirTarifas()" title="Editar tarifas" style="background:#1a1a00;border:1px solid var(--gold-dim);color:var(--gold);padding:3px 7px;border-radius:4px;font-size:0.65rem;cursor:pointer;flex-shrink:0;">✎</button>
+                </div>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card" id="cardW">
+                <div class="stat-label">Potência</div>
+                <div id="resW" class="stat-value">0W</div>
+            </div>
+            <div class="stat-card" id="cardA">
+                <div class="stat-label">Corrente</div>
+                <div id="resA" class="stat-value">0.0A</div>
+            </div>
+            <div class="stat-card energy" id="cardE">
+                <div class="stat-label">kWh/8h</div>
+                <div id="resE" class="stat-value">0.0</div>
+            </div>
+            <div class="stat-card" id="cardD">
+                <div class="stat-label">Disjuntor</div>
+                <div id="resD" class="stat-value">—</div>
+            </div>
+            <div class="stat-card" id="cardC">
+                <div class="stat-label">Custo/8h*</div>
+                <div id="resC" class="stat-value">R$ 0</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="safety-bar" id="safetyBar">
+        ⚡ <b>Diagnóstico NBR 5410:</b> <span id="safetyTip">Insira refletores para iniciar o mapeamento elétrico.</span>
+    </div>
+
+    <div class="m-grid">
+        <button class="m-btn m-nav" id="btn-aputure"    onclick="openPage('aputure')">Aputure</button>
+        <button class="m-btn m-nav" id="btn-godox"      onclick="openPage('godox')">Godox</button>
+        <button class="m-btn m-nav" id="btn-nanlite"    onclick="openPage('nanlite')">Nanlite</button>
+        <button class="m-btn m-nav" id="btn-arri"       onclick="openPage('arri')">Arri LED</button>
+        <button class="m-btn m-nav" id="btn-kinoflo"    onclick="openPage('kinoflo')">Kino/Astera</button>
+        <button class="m-btn m-nav" id="btn-litepanels" onclick="openPage('litepanels')">Litepanels</button>
+        <button class="m-btn m-nav" id="btn-broncolor"  onclick="openPage('broncolor')">Bron/Roto</button>
+        <button class="m-btn m-nav" id="btn-fiilex"     onclick="openPage('fiilex')">Fiilex/Luxli</button>
+        <button class="m-btn m-nav" id="btn-quasar"     onclick="openPage('quasar')">Quasar/Creams</button>
+        <button class="m-btn m-nav" id="btn-lowpower"   onclick="openPage('lowpower')" style="color:#a3f7bf;">Low Power</button>
+        <button class="m-btn m-nav" id="btn-broadcast"  onclick="openPage('broadcast')" style="color:#a78bfa;">Broadcast TV</button>
+        <button class="m-btn m-nav" id="btn-analog"     onclick="openPage('analog')" style="color:#ef4444;">Analógicos</button>
+        <button class="m-btn m-nav" id="btn-manual"     onclick="openPage('manual')" style="border-style:dashed;">+ MANUAL</button>
+        <button class="m-btn m-nav" id="btn-catalog"    onclick="openPage('catalog')" style="color:#38bdf8;border-color:#164e63;border-width:1px;">✎ CATÁLOGO</button>
+        <button class="m-btn" onclick="reset()" style="border-color:#ef4444;color:#ef4444;grid-column:span 4;padding:5px;">LIMPAR ALL</button>
+    </div>
+
+    <!-- APUTURE / AMARAN -->
+    <div id="page-aputure" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ APUTURE / AMARAN — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Aputure Electro Storm XT26',2600,false)"><span>Storm XT26</span><small>2600W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure Electro Storm CS15',1500,false)"><span>Storm CS15</span><small>1500W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 1200d Pro',1440,false)"><span>1200d Pro</span><small>1440W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 600d Pro',720,false)"><span>600d Pro</span><small>720W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure Nova P600c',720,false)"><span>Nova P600c</span><small>720W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 600c Pro',720,false)"><span>600c Pro</span><small>720W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 600x Pro',720,false)"><span>600x Pro</span><small>720W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 300d II',340,false)"><span>300d II</span><small>340W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure Nova P300c',300,false)"><span>Nova P300c</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 300x',300,false)"><span>300x</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 120d II',180,false)"><span>120d II</span><small>180W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 60d',65,false)"><span>LS 60d</span><small>65W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure LS 60x',65,false)"><span>LS 60x</span><small>65W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure Infinibar PB12',27,false)"><span>Infinibar PB12</span><small>27W pixel</small></div>
+            <div class="equip-btn" onclick="askVoltage('Amaran 200d S',200,false)"><span>Amaran 200d S</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Amaran 100x S',100,false)"><span>Amaran 100x S</span><small>100W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Amaran Ace 25c',32,false)"><span>Ace 25c</span><small>32W compacto</small></div>
+            <div class="equip-btn" onclick="askVoltage('Amaran Ace 25d',32,false)"><span>Ace 25d</span><small>32W compacto</small></div>
+            <div class="equip-btn" onclick="askVoltage('Aputure MC Pro',8,false)"><span>MC Pro</span><small>8W</small></div>
+        </div>
+    </div>
+
+    <!-- GODOX KNOWLED -->
+    <div id="page-godox" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ GODOX KNOWLED — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED MG2400Bi',2400,false)"><span>MG2400Bi</span><small>2400W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED MG1200Bi',1200,false)"><span>MG1200Bi</span><small>1200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED M600Bi',740,false)"><span>M600Bi</span><small>740W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED P600Bi',700,false)"><span>P600Bi Painel</span><small>700W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED M300Bi',350,false)"><span>M300Bi</span><small>350W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox VL300',300,false)"><span>VL300</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox SL200W III',200,false)"><span>SL200W III</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox SL150W III',150,false)"><span>SL150W III</span><small>150W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox SL100D',100,false)"><span>SL100D</span><small>100W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox KNOWLED TP4R',64,false)"><span>TP4R Tubo</span><small>64W pixel</small></div>
+            <div class="equip-btn" onclick="askVoltage('Godox LEDP260C',45,false)"><span>LEDP260C</span><small>45W</small></div>
+        </div>
+    </div>
+
+    <!-- NANLUX / NANLITE -->
+    <div id="page-nanlite" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ NANLUX / NANLITE — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Nanlux Evoke 2400B',2400,false)"><span>Evoke 2400B</span><small>2400W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlux Evoke 1200B',1200,false)"><span>Evoke 1200B</span><small>1200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlux Dyno 1200C',1200,false)"><span>Dyno 1200C</span><small>1200W soft</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlux Evoke 900C',900,false)"><span>Evoke 900C</span><small>900W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 720B',800,false)"><span>Forza 720B</span><small>800W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 500 II',560,false)"><span>Forza 500 II</span><small>560W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 300B II',300,false)"><span>Forza 300B II</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 200B',200,false)"><span>Forza 200B</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 150B',150,false)"><span>Forza 150B</span><small>150W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite PavoSlim 120B',120,false)"><span>PavoSlim 120B</span><small>120W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite Forza 60B',65,false)"><span>Forza 60B</span><small>65W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite PavoTube II 30C',38,false)"><span>PavoTube II 30C</span><small>38W tubo</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite PavoTube 30C',45,false)"><span>PavoTube 30C</span><small>45W tubo</small></div>
+            <div class="equip-btn" onclick="askVoltage('Nanlite PavoTube 6C',6,false)"><span>PavoTube 6C</span><small>6W</small></div>
+        </div>
+    </div>
+
+    <!-- ARRI LED -->
+    <div id="page-arri" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ ARRI LED — (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel S360-C',1500,false)"><span>SkyPanel S360</span><small>1500W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel S120-C',600,false)"><span>SkyPanel S120</span><small>600W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel S60-C',450,false)"><span>SkyPanel S60</span><small>450W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel S30-C',200,false)"><span>SkyPanel S30</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel X23',1200,false)"><span>SkyPanel X23</span><small>1200W modular</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel X22',800,false)"><span>SkyPanel X22</span><small>800W modular</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri SkyPanel X21',400,false)"><span>SkyPanel X21</span><small>400W modular</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri Orbiter',500,false)"><span>Orbiter</span><small>500W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri L10-C',300,false)"><span>L10-C</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri L7-C',180,false)"><span>L7-C</span><small>180W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri L5-C',120,false)"><span>L5-C</span><small>120W</small></div>
+        </div>
+    </div>
+
+    <!-- KINO FLO / ASTERA -->
+    <div id="page-kinoflo" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ KINO FLO / ASTERA — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Kino Flo Celeb 850 LED',575,false)"><span>Celeb 850</span><small>575W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Kino Flo Celeb 450 LED',300,false)"><span>Celeb 450</span><small>300W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Kino Flo FreeStyle 4 LED',150,false)"><span>FreeStyle 4</span><small>150W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Kino Flo Select 31 LED',150,false)"><span>Select 31</span><small>150W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Kino Flo 4Bank LED 4ft',120,false)"><span>4Bank 4ft</span><small>120W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Kino Flo 2Bank LED 4ft',60,false)"><span>2Bank 4ft</span><small>60W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera Hyperion Tube',72,false)"><span>Hyperion Tube</span><small>72W 2m</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera Titan Tube',36,false)"><span>Titan Tube</span><small>36W 1m</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera Helios Tube',50,false)"><span>Helios Tube</span><small>50W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera PlutoTube',10,false)"><span>PlutoTube</span><small>10W compacto</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera AX1 Pixel Tube',6,false)"><span>AX1 Pixel</span><small>6W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Astera NYX Bulb',5,false)"><span>NYX Bulb</span><small>5W</small></div>
+        </div>
+    </div>
+
+    <!-- LITEPANELS -->
+    <div id="page-litepanels" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ LITEPANELS — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Litepanels Hilio T12',1250,false)"><span>Hilio T12</span><small>1250W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Hilio D12',1250,false)"><span>Hilio D12</span><small>1250W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Gemini 2x1 Hard',480,false)"><span>Gemini 2x1 H</span><small>480W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Gemini 2x1 Soft',480,false)"><span>Gemini 2x1 S</span><small>480W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Gemini 1x1',240,false)"><span>Gemini 1x1</span><small>240W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Astra 6x Bi',100,false)"><span>Astra 6x Bi</span><small>100W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels Astra 3x Bi',50,false)"><span>Astra 3x Bi</span><small>50W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Litepanels 1x1 Bi Color',50,false)"><span>1x1 Bi Color</span><small>50W</small></div>
+        </div>
+    </div>
+
+    <!-- BRONCOLOR / ROTOLIGHT -->
+    <div id="page-broncolor" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ BRONCOLOR / ROTOLIGHT — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Broncolor Scoro 3200E',3200,false)"><span>Scoro 3200E</span><small>3200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Broncolor Move 1200L',1200,false)"><span>Move 1200L</span><small>1200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Broncolor Siros 800L',800,false)"><span>Siros 800L</span><small>800W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Rotolight Titan X2',400,false)"><span>Titan X2</span><small>400W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Rotolight AEOS 3',180,false)"><span>AEOS 3</span><small>180W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Rotolight Anova Pro 2',130,false)"><span>Anova Pro 2</span><small>130W</small></div>
+        </div>
+    </div>
+
+    <!-- FIILEX / LUXLI -->
+    <div id="page-fiilex" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ FIILEX / LUXLI — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Luxli Orchestra',1200,false)"><span>Orchestra</span><small>1200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Luxli Timpani',500,false)"><span>Timpani</span><small>500W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fiilex Q8',1000,false)"><span>Q8</span><small>1000W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Luxli Cello',170,false)"><span>Cello</span><small>170W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fiilex P360EX',55,false)"><span>P360EX</span><small>55W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fiilex P360T',55,false)"><span>P360T</span><small>55W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Luxli Viola',42,false)"><span>Viola</span><small>42W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fiilex P180-E',32,false)"><span>P180-E</span><small>32W</small></div>
+        </div>
+    </div>
+
+    <!-- QUASAR / CREAMSOURCE -->
+    <div id="page-quasar" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ QUASAR SCIENCE / CREAMSOURCE — LED (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Creamsource SpaceX 2',2000,false)"><span>SpaceX 2</span><small>2000W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Creamsource Vortex8',1000,false)"><span>Vortex8</span><small>1000W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Quasar Science Q-LED X 8ft',200,false)"><span>Q-LED X 8ft</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Creamsource Micro Color',200,false)"><span>Micro Color</span><small>200W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Quasar Science Q-LED X 4ft',100,false)"><span>Q-LED X 4ft</span><small>100W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Quasar Science Crossfade 4ft',50,false)"><span>Crossfade 4ft</span><small>50W</small></div>
+            <div class="equip-btn" onclick="askVoltage('Quasar Science Rainbow 2',30,false)"><span>Rainbow 2</span><small>30W</small></div>
+        </div>
+    </div>
+
+    <!-- LOW POWER -->
+    <div id="page-lowpower" class="equip-page">
+        <div class="page-label" style="color:#a3f7bf;">▸ BAIXA POTÊNCIA — mercado BR (FP 0.95)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Zhiyun Molus X100',100,false)"><span>Molus X100</span><small>100W Zhiyun</small></div>
+            <div class="equip-btn" onclick="askVoltage('Falcon Eyes RX-18TD',100,false)"><span>RX-18TD</span><small>100W Falcon</small></div>
+            <div class="equip-btn" onclick="askVoltage('SmallRig RC 120B',120,false)"><span>RC 120B</span><small>120W SmallRig</small></div>
+            <div class="equip-btn" onclick="askVoltage('Neewer SL80',80,false)"><span>SL80</span><small>80W Neewer</small></div>
+            <div class="equip-btn" onclick="askVoltage('Yongnuo YN600L II',60,false)"><span>YN600L II</span><small>60W Yongnuo</small></div>
+            <div class="equip-btn" onclick="askVoltage('Yongnuo YN900',60,false)"><span>YN900</span><small>60W Yongnuo</small></div>
+            <div class="equip-btn" onclick="askVoltage('Zhiyun Molus G60',60,false)"><span>Molus G60</span><small>60W Zhiyun</small></div>
+            <div class="equip-btn" onclick="askVoltage('SmallRig RC 60B',65,false)"><span>RC 60B</span><small>65W SmallRig</small></div>
+            <div class="equip-btn" onclick="askVoltage('Came-TV Boltzen 55W',55,false)"><span>Boltzen 55W</span><small>55W Came-TV</small></div>
+            <div class="equip-btn" onclick="askVoltage('Neewer NL660S',50,false)"><span>NL660S</span><small>50W Neewer</small></div>
+            <div class="equip-btn" onclick="askVoltage('Dracast LED500 Pro Bi',50,false)"><span>LED500 Pro</span><small>50W Dracast</small></div>
+            <div class="equip-btn" onclick="askVoltage('Elgato Key Light',45,false)"><span>Key Light</span><small>45W Elgato</small></div>
+            <div class="equip-btn" onclick="askVoltage('Neewer NL480',40,false)"><span>NL480</span><small>40W Neewer</small></div>
+            <div class="equip-btn" onclick="askVoltage('Viltrox VL-S192T',35,false)"><span>VL-S192T</span><small>35W Viltrox</small></div>
+            <div class="equip-btn" onclick="askVoltage('Viltrox VL-200T',30,false)"><span>VL-200T</span><small>30W Viltrox</small></div>
+            <div class="equip-btn" onclick="askVoltage('Yongnuo YN360 III',24,false)"><span>YN360 III</span><small>24W Yongnuo</small></div>
+            <div class="equip-btn" onclick="askVoltage('Elgato Key Light Air',18,false)"><span>Key Light Air</span><small>18W Elgato</small></div>
+        </div>
+    </div>
+
+    <!-- BROADCAST / STUDIO TV -->
+    <div id="page-broadcast" class="equip-page">
+        <div class="page-label" style="color:#a78bfa;">▸ BROADCAST / STUDIO TV — Emissoras e Sets Jornalísticos</div>
+        <div class="equip-grid">
+
+            <!-- DEDOLIGHT — LED (FP 0.95) -->
+            <div class="equip-btn" style="border-top:2px solid #a78bfa;" onclick="askVoltage('Dedolight DLED9 Bi-Color',150,false)"><span>DLED9 Bi-Color</span><small>150W LED</small></div>
+            <div class="equip-btn" style="border-top:2px solid #a78bfa;" onclick="askVoltage('Dedolight DLED7',100,false)"><span>DLED7</span><small>100W LED</small></div>
+            <div class="equip-btn" style="border-top:2px solid #a78bfa;" onclick="askVoltage('Dedolight DLED4',40,false)"><span>DLED4</span><small>40W LED</small></div>
+            <div class="equip-btn" style="border-top:2px solid #a78bfa;" onclick="askVoltage('Dedolight Felloni 40W',40,false)"><span>Felloni 40W</span><small>40W LED painel</small></div>
+
+            <!-- DEDOLIGHT — Tungstênio/Halógeno (FP 1.0) -->
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Dedolight DLH650 Tung.',650,false,true)"><span>DLH650</span><small>650W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Dedolight DLH400 Tung.',400,false,true)"><span>DLH400</span><small>400W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Dedolight DLH200 Tung.',200,false,true)"><span>DLH200</span><small>200W Tung.</small></div>
+
+            <!-- FREZZI — HMI (FP 1.0) -->
+            <div class="equip-btn" style="border-top:2px solid #ef4444;" onclick="askVoltage('Frezzi HMI 400W',400,false,true)"><span>Frezzi HMI 400</span><small>400W HMI</small></div>
+            <div class="equip-btn" style="border-top:2px solid #ef4444;" onclick="askVoltage('Frezzi HMI 200W',200,false,true)"><span>Frezzi HMI 200</span><small>200W HMI</small></div>
+            <div class="equip-btn" style="border-top:2px solid #ef4444;" onclick="askVoltage('Frezzi HMI 100W',100,false,true)"><span>Frezzi HMI 100</span><small>100W HMI</small></div>
+
+            <!-- IANIRO — Tungstênio/Halógeno (FP 1.0) -->
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Ianiro Varibeam 1200W',1200,false,true)"><span>Varibeam 1200</span><small>1200W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Ianiro Varibeam 650W',650,false,true)"><span>Varibeam 650</span><small>650W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Ianiro Coolbeam 200W',200,false,true)"><span>Coolbeam 200</span><small>200W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Ianiro Mizar 800W',800,false,true)"><span>Mizar 800</span><small>800W Tung.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #f59e0b;" onclick="askVoltage('Ianiro Cinelight 2500W',2500,false,true)"><span>Cinelight 2500</span><small>2500W Tung.</small></div>
+
+            <!-- KINO FLO Fluorescente (FP 0.95 — balastro eletrônico) -->
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Kino Flo 4Bank 4ft Fluo',430,false)"><span>4Bank 4ft Fluo</span><small>430W Fluor.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Kino Flo 2Bank 4ft Fluo',215,false)"><span>2Bank 4ft Fluo</span><small>215W Fluor.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Kino Flo 4Bank 2ft Fluo',120,false)"><span>4Bank 2ft Fluo</span><small>120W Fluor.</small></div>
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Kino Flo Diva-Lite 400',400,false)"><span>Diva-Lite 400</span><small>400W Fluor.</small></div>
+
+            <!-- VIDESSENCE / STUDIO FLUO (FP 0.95) -->
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Videssence VB100',100,false)"><span>Videssence VB100</span><small>100W Studio</small></div>
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Videssence VB200',200,false)"><span>Videssence VB200</span><small>200W Studio</small></div>
+            <div class="equip-btn" style="border-top:2px solid #38bdf8;" onclick="askVoltage('Litepanels Ringlite Mini',50,false)"><span>Ringlite Mini</span><small>50W LED ring</small></div>
+        </div>
+        <div style="font-size:0.50rem;color:#555;margin-top:6px;line-height:1.5;padding:4px 0;border-top:1px solid #1a1a1a;">
+            <span style="color:#a78bfa;">■</span> LED FP=0.95 &nbsp;
+            <span style="color:#f59e0b;">■</span> Tung./Halógeno FP=1.0 &nbsp;
+            <span style="color:#ef4444;">■</span> HMI FP=1.0 &nbsp;
+            <span style="color:#38bdf8;">■</span> Fluorescente FP=0.95
+        </div>
+    </div>
+
+    <!-- ANALÓGICOS / HMI / TUNGSTÊNIO -->
+    <div id="page-analog" class="equip-page">
+        <div class="page-label" style="color:#ef4444;">⚠️ CARGA RESISTIVA — FP = 1.0 (NBR 5410 ESTRITA)</div>
+        <div class="equip-grid">
+            <div class="equip-btn" onclick="askVoltage('Fresnel Tungstênio 10K',10000,false,true)"><span>Fresnel 10K</span><small>10000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fresnel Tungstênio 5K',5000,false,true)"><span>Fresnel 5K</span><small>5000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fresnel Tungstênio 2K',2000,false,true)"><span>Fresnel 2K</span><small>2000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fresnel Tungstênio 1K',1000,false,true)"><span>Fresnel 1K</span><small>1000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('Fresnel Tungstênio 650W',650,false,true)"><span>Fresnel 650W</span><small>650W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('PAR 64 CP62 1K',1000,false,true)"><span>PAR 64 CP62</span><small>1000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('PAR 64 CP61 1K',1000,false,true)"><span>PAR 64 CP61</span><small>1000W Tung.</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI DayLite 18K',18000,false,true)"><span>HMI 18kW</span><small>18000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI DayLite 12K',12000,false,true)"><span>HMI 12kW</span><small>12000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI Fresnel 6K',6000,false,true)"><span>HMI 6kW</span><small>6000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI Fresnel 4K',4000,false,true)"><span>HMI 4kW</span><small>4000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI Fresnel 2.5K',2500,false,true)"><span>HMI 2.5kW</span><small>2500W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI M90',9000,false,true)"><span>HMI M90</span><small>9000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI M40',4000,false,true)"><span>HMI M40</span><small>4000W HMI</small></div>
+            <div class="equip-btn" onclick="askVoltage('Arri HMI M18',1800,false,true)"><span>HMI M18</span><small>1800W HMI</small></div>
+        </div>
+    </div>
+
+    <!-- MANUAL -->
+    <div id="page-manual" class="equip-page">
+        <div class="page-label" style="color:var(--gold);">▸ INSERÇÃO CUSTOMIZADA</div>
+        <div class="manual-form">
+            <div class="manual-inputs">
+                <input type="text"   id="manName" placeholder="Identificação do Refletor">
+                <input type="number" id="manWatt" placeholder="Watts" min="1">
+                <button onclick="askVoltageManual()" style="background:var(--gold);border:none;padding:0 13px;border-radius:6px;font-weight:900;color:#000;cursor:pointer;font-size:1rem;">+</button>
+            </div>
+            <div style="font-size:0.46rem;color:#555;">Tratado como LED (FP=0.95). Para carga resistiva pura, use aba Analógicos.</div>
+        </div>
+    </div>
+
+    <!-- CATÁLOGO EDITÁVEL -->
+    <div id="page-catalog" class="equip-page">
+        <div class="page-label" style="color:#38bdf8;">✎ EDITOR DE CATÁLOGO — Refletores Personalizados</div>
+        <div style="font-size:0.54rem;color:#555;margin-bottom:8px;line-height:1.5;">
+            Adicione equipamentos ao catálogo permanente. Os dados ficam salvos no dispositivo e aparecem na aba <b style="color:#a3a3a3;">+ MANUAL</b> como atalhos rápidos.
+        </div>
+
+        <!-- FORM NOVO EQUIPAMENTO -->
+        <div style="background:#0a0a0a;border:1px solid #1a2a1a;border-radius:6px;padding:8px;margin-bottom:10px;">
+            <div style="font-family:'Syne',sans-serif;font-size:0.58rem;color:#38bdf8;font-weight:800;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;">+ Novo Equipamento</div>
+            <div style="display:flex;flex-direction:column;gap:5px;">
+                <input type="text" id="catFab" placeholder="Fabricante (ex: Aputure)" style="background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:5px;font-family:inherit;font-size:0.58rem;outline:none;">
+                <input type="text" id="catName" placeholder="Modelo (ex: LS 600d Pro)" style="background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:5px;font-family:inherit;font-size:0.58rem;outline:none;">
+                <div style="display:flex;gap:5px;">
+                    <input type="number" id="catWatt" placeholder="Watts" min="1" style="background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:5px;font-family:inherit;font-size:0.58rem;outline:none;flex:1;">
+                    <select id="catFP" style="background:#000;color:var(--gold);border:1px solid var(--gold);padding:7px;border-radius:5px;font-family:inherit;font-size:0.58rem;outline:none;flex:1;">
+                        <option value="led">LED (FP 0.95)</option>
+                        <option value="analog">Resistivo (FP 1.0)</option>
+                    </select>
+                </div>
+                <button onclick="addCatalogItem()" style="background:#38bdf8;color:#000;border:none;padding:9px;border-radius:6px;font-family:'Syne',sans-serif;font-weight:800;font-size:0.62rem;cursor:pointer;letter-spacing:1px;text-transform:uppercase;">SALVAR NO CATÁLOGO</button>
+            </div>
+        </div>
+
+        <!-- LISTA DO CATÁLOGO PERSONALIZADO -->
+        <div id="catalogList" style="display:flex;flex-direction:column;gap:4px;"></div>
+    </div>
+
+    <div id="itemList"></div>
+
+    <div class="dist-panel" id="distPanel" style="display:none;">
+        <div class="dist-panel-title">
+            ⚡ Distribuição Inteligente de Circuitos
+            <small>NBR 5410 · NBR IEC 60898-1 · Margem 25%</small>
+        </div>
+        <div id="distContent"></div>
+    </div>
+
+    <div class="summary-dashboard" id="summaryDash" style="display:none;">
+        <h3>Diagnóstico Técnico Real (Diária de 8h)</h3>
+        <div class="summary-line">Potência Ativa Total: <span id="dashW">0W</span></div>
+        <div class="summary-line energy">Consumo de Energia (8h): <span id="dashE">0.0 kWh</span></div>
+        <div style="font-size:0.42rem;color:#555;margin-bottom:3px;">* Custo com tarifa total ANEEL 2025-2026 (ICMS + encargos) — bandeira amarela de referência.</div>
+        <div class="summary-line">Corrente Real de Linha (c/ FP): <span id="dashA">0.0A</span></div>
+        <div class="summary-line">Disjuntor Geral Recomendado: <span id="dashD">—</span></div>
+        <div class="summary-line">Custo de Energia (8h): <span id="dashC">R$ 0,00</span></div>
+        <div class="summary-line">Responsável pelo Projeto: <span id="dashResp">Não Definido</span></div>
+        <div class="summary-line">Celular / WhatsApp: <span id="dashPhone">—</span></div>
+        <div class="summary-line">E-mail: <span id="dashEmail">—</span></div>
+    </div>
+
+    <div style="margin-top:18px;">
+        <button class="btn-main" onclick="triggerReportPrint()">EMITIR ORDEM DE CARGA (PDF)</button>
+    </div>
+
+    <!-- BOTÕES DE AÇÃO SECUNDÁRIOS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;">
+        <button onclick="abrirManual()" style="background:#111;border:1px solid #333;color:#a3a3a3;padding:10px;border-radius:6px;font-family:inherit;font-size:0.54rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;">
+            📖 MANUAL
+        </button>
+        <button onclick="abrirSuporte()" style="background:#111;border:1px solid #333;color:#a3a3a3;padding:10px;border-radius:6px;font-family:inherit;font-size:0.54rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;">
+            📩 SUPORTE
+        </button>
+        <button onclick="compartilharDemo()" style="background:#111;border:1px solid #009c3b;color:#4ade80;padding:10px;border-radius:6px;font-family:inherit;font-size:0.54rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;">
+            📲 INDICAR AMIGO
+        </button>
+        <button onclick="tentarAdmin()" style="background:#111;border:1px solid #1a1a1a;color:#333;padding:10px;border-radius:6px;font-family:inherit;font-size:0.44rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:1px;" id="btnAdmin">
+            ⚙
+        </button>
+    </div>
+
+    <footer>
+        🇧🇷 PRODUTO 100% BRASILEIRO · DENILSON ALVES VIANNA · DIRETOR DE FOTOGRAFIA<br>
+        DESENVOLVIDO NO BRASIL © 2026 · ENGENHARIA DE SEGURANÇA ELÉTRICA CINEMATOGRÁFICA<br>
+        <span style="font-size:0.44rem;color:#555;">NBR 5410 · IEC 61000-3-2 · NBR IEC 60898-1 · ANEEL 2025-2026</span><br>
+        <span style="font-size:0.38rem;color:#555;">* Custo calculado com tarifa total (ICMS + PIS/COFINS + COSIP + encargos) — ANEEL 2025-2026 bandeira amarela de referência. Consulte sua fatura para o valor exato.</span>
+        <div class="dev-note">Arquitetura de código discreta — SET ELÉTRICO PRO v2.</div>
+    </footer>
+
+    <div id="printArea">
+        <div class="print-header">
+            <div>
+                <div class="print-title">Ordem de Carga</div>
+                <div class="print-sub">SET ELÉTRICO PRO — PROPRIEDADE: DENILSON ALVES VIANNA · DP</div>
+            </div>
+            <div id="qrcode"></div>
+        </div>
+        <div class="print-meta">
+            <div>Regime Contratual: <b>Diária de 8 Horas</b></div>
+            <div>Responsável Técnico: <span id="printResp" style="text-decoration:underline;">Não Definido</span></div>
+        </div>
+        <div class="print-contact-block">
+            <div>📱 <b>Celular / WhatsApp:</b> <span id="printPhone">—</span></div>
+            <div>✉️ <b>E-mail:</b> <span id="printEmail">—</span></div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>EQUIPAMENTO / REFLETOR</th>
+                    <th>TENSÃO</th>
+                    <th>QTDE</th>
+                    <th>FP</th>
+                    <th>POT. UNIT.</th>
+                    <th>POT. ACUMULADA</th>
+                </tr>
+            </thead>
+            <tbody id="pBody"></tbody>
+        </table>
+        <div id="pFooter"></div>
+        <div id="printCircuits"></div>
+    </div>
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- MODAL MANUAL DE USO                          -->
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- MODAL TARIFAS EDITAVEIS -->
+    <div id="modalTarifas" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.97);z-index:8500;overflow-y:auto;padding:16px;">
+        <div style="max-width:420px;margin:0 auto;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;border-bottom:2px solid var(--gold);padding-bottom:8px;">
+                <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.75rem;font-weight:800;letter-spacing:2px;">&#9651; TARIFAS ANEEL</div>
+                <button onclick="fecharTarifas()" style="background:none;border:none;color:#737373;font-size:1.2rem;cursor:pointer;">&#10005;</button>
+            </div>
+            <div style="font-size:0.50rem;color:#555;margin-bottom:10px;line-height:1.6;">
+                Valores com ICMS + PIS/COFINS + COSIP + encargos setoriais (NBR 5410 — bandeira amarela de referencia). Salvo no dispositivo.
+            </div>
+            <!-- LISTA DINAMICA -->
+            <div id="tarifaLista" style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;"></div>
+            <!-- FORM ADICIONAR -->
+            <div style="background:#0a0a0a;border:1px solid #2a2200;border-radius:6px;padding:10px;margin-bottom:12px;">
+                <div style="font-family:'Syne',sans-serif;font-size:0.56rem;color:var(--gold);font-weight:800;margin-bottom:7px;text-transform:uppercase;letter-spacing:1px;">+ Nova Concessionaria</div>
+                <div style="display:flex;gap:5px;margin-bottom:6px;">
+                    <input type="text" id="tNome" placeholder="Nome (ex: Elektro SP)" style="flex:2;background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:5px;font-family:inherit;font-size:0.56rem;outline:none;">
+                    <input type="number" id="tValor" placeholder="R$/kWh" step="0.01" min="0.01" style="flex:1;background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:5px;font-family:inherit;font-size:0.56rem;outline:none;">
+                </div>
+                <button onclick="adicionarTarifa()" style="width:100%;background:var(--gold);color:#000;border:none;padding:9px;border-radius:6px;font-family:'Syne',sans-serif;font-weight:800;font-size:0.60rem;cursor:pointer;letter-spacing:1px;text-transform:uppercase;">SALVAR</button>
+            </div>
+            <button onclick="resetarTarifas()" style="width:100%;background:#1a0000;border:1px solid #7f1d1d;color:#f87171;padding:8px;border-radius:6px;font-family:inherit;font-size:0.52rem;font-weight:700;cursor:pointer;">Restaurar Tarifas Originais ANEEL</button>
+            <button onclick="fecharTarifas()" class="btn-main" style="margin-top:10px;">FECHAR</button>
+        </div>
+    </div>
+
+    <div id="modalManual" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.97);z-index:8000;overflow-y:auto;padding:16px;">
+        <div style="max-width:480px;margin:0 auto;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;border-bottom:2px solid var(--gold);padding-bottom:8px;">
+                <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.8rem;font-weight:800;letter-spacing:2px;">📖 MANUAL DE USO</div>
+                <button onclick="document.getElementById('modalManual').style.display='none'" style="background:none;border:none;color:#737373;font-size:1.2rem;cursor:pointer;">✕</button>
+            </div>
+            <div style="font-size:0.54rem;color:#a3a3a3;line-height:1.8;">
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">1. INSTALAÇÃO NO CELULAR</div>
+                <b style="color:#fff;">iPhone (Safari):</b> Abra o link → toque em □↑ → "Adicionar à Tela de Início"<br>
+                <b style="color:#fff;">Android (Chrome):</b> Abra o link → menu ⋮ → "Adicionar à tela inicial"<br>
+                O ícone aparece como app nativo. Funciona offline após instalação.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">2. ATIVAÇÃO DA LICENÇA</div>
+                Após o pagamento via PIX (R$50,00), a senha no formato <b style="color:#fff;">DV-XXXX-XXXX</b> será enviada via WhatsApp em até 1 hora.<br>
+                Na tela inicial, toque em <b style="color:#fff;">"JÁ COMPREI"</b> e digite sua senha. A licença permite <b style="color:#fff;">10 usos</b> e <b style="color:#fff;">3 PDFs</b>.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">3. MODO DEMO</div>
+                Toque em <b style="color:#fff;">"DEMO GRATUITO"</b> para experimentar 3 vezes sem senha. A emissão de PDF não está disponível no demo.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">4. CONFIGURAÇÃO DO SET</div>
+                <b style="color:#fff;">Tensão da linha:</b> selecione 220V (bifásico/trifásico) ou 127V (monofásico). Em caso de dúvida, verifique o quadro elétrico do local.<br>
+                <b style="color:#fff;">Concessionária:</b> selecione a distribuidora do local para calcular o custo real com ICMS e encargos.<br>
+                <b style="color:#fff;">Responsável:</b> preencha nome e contato — aparece na Ordem de Carga.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">5. ADICIONANDO REFLETORES</div>
+                Toque na aba do fabricante → toque no modelo → selecione a tensão (127V ou 220V).<br>
+                Use <b style="color:#fff;">+ MANUAL</b> para equipamentos não listados.<br>
+                Use <b style="color:#fff;">✎ CATÁLOGO</b> para salvar equipamentos próprios permanentemente.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">6. LENDO OS RESULTADOS</div>
+                <b style="color:#fff;">Potência (W):</b> soma total de todos os refletores<br>
+                <b style="color:#fff;">Corrente (A):</b> ampères reais na linha, calculados com Fator de Potência<br>
+                <b style="color:#fff;">Disjuntor:</b> proteção mínima recomendada pela NBR 5410 (margem 25%)<br>
+                <b style="color:#fff;">kWh/8h:</b> consumo de energia por diária<br>
+                <b style="color:#fff;">Custo/8h:</b> estimativa com tarifa completa (ICMS + encargos)<br>
+                <b style="color:#fff;color:#ef4444;">⚠ ALERTA VERMELHO:</b> descasamento de tensão ou carga crítica — não ligue sem verificar.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">7. DISTRIBUIÇÃO DE LINHAS (CIRCUITOS)</div>
+                Cada <b style="color:#fff;">LINHA</b> é um cabo independente do quadro ao equipamento.<br>
+                <b style="color:#fff;">NUNCA</b> misture refletores de linhas diferentes na mesma tomada ou extensão.<br>
+                A coluna <b style="color:#fff;">Folga</b> mostra ampères disponíveis para expansão futura.<br>
+                Para cabos acima de 20m: consulte o técnico sobre queda de tensão.
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">8. ORDEM DE CARGA (PDF)</div>
+                Toque em <b style="color:#fff;">"EMITIR ORDEM DE CARGA"</b> para gerar o relatório completo.<br>
+                O documento inclui: lista de equipamentos, métricas NBR 5410, distribuição de circuitos, assinatura técnica e aviso de responsabilidade.<br>
+                Disponível apenas na versão com licença (máx. 3 PDFs por licença).
+
+                <div style="color:var(--gold);font-weight:700;font-size:0.6rem;margin:12px 0 4px;">9. NORMAS APLICADAS</div>
+                <b style="color:#fff;">NBR 5410:2004</b> — Instalações elétricas de baixa tensão<br>
+                <b style="color:#fff;">IEC 61000-3-2:2018</b> — Fator de Potência por tipo de carga<br>
+                <b style="color:#fff;">NBR IEC 60898-1</b> — Disjuntores de baixa tensão<br>
+                <b style="color:#fff;">ANEEL 2025-2026</b> — Tarifas com encargos setoriais
+
+                <div style="background:#140000;border:1px solid #7f1d1d;border-radius:6px;padding:8px;margin:12px 0;font-size:0.50rem;color:#f87171;line-height:1.6;">
+                    ⚠ <b>AVISO:</b> Este app é uma ferramenta auxiliar. Toda instalação deve ser validada por Técnico ou Engenheiro Elétrico habilitado antes da energização. O autor não se responsabiliza por acidentes decorrentes do uso.
+                </div>
+            </div>
+            <button onclick="document.getElementById('modalManual').style.display='none'" class="btn-main" style="margin-top:12px;">FECHAR MANUAL</button>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- MODAL SUPORTE — Mensagem para o Admin         -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="modalSuporte" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.97);z-index:8000;align-items:center;justify-content:center;padding:20px;">
+        <div style="background:#141414;border:2px solid var(--gold);border-radius:12px;padding:20px;width:100%;max-width:340px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+                <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.7rem;font-weight:800;letter-spacing:2px;">📩 FALAR COM SUPORTE</div>
+                <button onclick="fecharSuporte()" style="background:none;border:none;color:#737373;font-size:1.2rem;cursor:pointer;">✕</button>
+            </div>
+            <div style="font-size:0.50rem;color:#555;margin-bottom:10px;">Envie sua dúvida ou problema. Respondemos via WhatsApp.</div>
+            <input type="text" id="suporteNome" placeholder="Seu nome" style="width:100%;background:#000;border:1px solid #333;color:#fff;padding:8px;border-radius:6px;font-family:inherit;font-size:0.56rem;margin-bottom:6px;outline:none;">
+            <textarea id="suporteMsg" placeholder="Descreva sua dúvida ou problema..." rows="4" style="width:100%;background:#000;border:1px solid #333;color:#fff;padding:8px;border-radius:6px;font-family:inherit;font-size:0.56rem;resize:none;outline:none;margin-bottom:10px;"></textarea>
+            <div id="suporteStatus" style="font-size:0.50rem;color:#737373;min-height:16px;margin-bottom:8px;text-align:center;"></div>
+            <!-- Resposta do admin -->
+            <div id="suporteResposta" style="display:none;background:#0a1a0a;border:1px solid #166534;border-radius:6px;padding:8px;margin-bottom:10px;font-size:0.52rem;color:#4ade80;line-height:1.5;"></div>
+            <button onclick="enviarSuporte()" class="btn-main" style="font-size:0.62rem;">ENVIAR MENSAGEM</button>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- MODAL ADMIN — Acesso por senha master         -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="modalAdminAuth" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.98);z-index:9000;align-items:center;justify-content:center;padding:20px;">
+        <div style="background:#141414;border:2px solid var(--gold);border-radius:12px;padding:20px;width:100%;max-width:300px;text-align:center;">
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.7rem;font-weight:800;letter-spacing:2px;margin-bottom:14px;">⚙ ACESSO ADMIN</div>
+            <input type="password" id="adminPassInput" placeholder="Senha Admin"
+                style="width:100%;background:#000;border:1px solid var(--gold);color:#fff;padding:12px;border-radius:6px;font-family:monospace;font-size:1rem;letter-spacing:3px;text-align:center;outline:none;margin-bottom:10px;"
+                onkeydown="if(event.key==='Enter') verificarAdmin()">
+            <div id="adminAuthMsg" style="font-size:0.50rem;color:#ef4444;min-height:14px;margin-bottom:8px;"></div>
+            <button onclick="verificarAdmin()" class="btn-main" style="font-size:0.62rem;">ENTRAR</button>
+            <button onclick="document.getElementById('modalAdminAuth').style.display='none'"
+                style="background:none;border:none;color:#555;font-size:0.50rem;cursor:pointer;margin-top:8px;display:block;width:100%;">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- PAINEL ADMIN COMPLETO                         -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="painelAdmin" style="display:none;position:fixed;inset:0;background:#000;z-index:9500;overflow-y:auto;">
+        <div style="background:#0a0a0a;border-bottom:2px solid var(--gold);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;">
+            <div>
+                <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.75rem;font-weight:800;letter-spacing:2px;">⚙ PAINEL ADMIN</div>
+                <div style="font-size:0.44rem;color:#555;">Denilson Alves Vianna · Super Admin</div>
+            </div>
+            <button onclick="fecharAdmin()" style="background:#1a0a0a;border:1px solid #7f1d1d;color:#f87171;padding:6px 12px;border-radius:6px;font-family:inherit;font-size:0.52rem;font-weight:700;cursor:pointer;">SAIR</button>
+        </div>
+
+        <div style="padding:14px;max-width:480px;margin:0 auto;">
+
+            <!-- CONTADORES EM TEMPO REAL -->
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.62rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;">📊 Dashboard</div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:16px;">
+                <div style="background:#111;border:1px solid #222;border-radius:6px;padding:8px;text-align:center;">
+                    <div style="font-size:0.40rem;color:#737373;text-transform:uppercase;margin-bottom:2px;">Licenças Ativas</div>
+                    <div id="adminTotalAtivas" style="font-size:0.8rem;font-weight:700;color:var(--gold);">—</div>
+                </div>
+                <div style="background:#111;border:1px solid #222;border-radius:6px;padding:8px;text-align:center;">
+                    <div style="font-size:0.40rem;color:#737373;text-transform:uppercase;margin-bottom:2px;">Demos Usados</div>
+                    <div id="adminTotalDemos" style="font-size:0.8rem;font-weight:700;color:#f59e0b;">—</div>
+                </div>
+                <div style="background:#111;border:1px solid #222;border-radius:6px;padding:8px;text-align:center;">
+                    <div style="font-size:0.40rem;color:#737373;text-transform:uppercase;margin-bottom:2px;">Msgs Pendentes</div>
+                    <div id="adminTotalMsgs" style="font-size:0.8rem;font-weight:700;color:#38bdf8;">—</div>
+                </div>
+            </div>
+
+            <!-- GERAR SENHAS -->
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.62rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;">🔑 Gerar Senhas</div>
+            <div style="background:#111;border:1px solid #222;border-radius:8px;padding:12px;margin-bottom:16px;">
+                <div style="display:flex;gap:6px;margin-bottom:8px;">
+                    <select id="adminTipoSenha" style="flex:1;background:#000;color:var(--gold);border:1px solid var(--gold);padding:7px;border-radius:6px;font-family:inherit;font-size:0.54rem;outline:none;">
+                        <option value="venda">VENDA — 10 usos / 3 PDFs / 1 ano</option>
+                        <option value="presente">PRESENTE — 10 usos / 3 PDFs / 1 ano</option>
+                        <option value="teste">TESTE — 3 usos / 1 PDF / 7 dias</option>
+                        <option value="custom">CUSTOM — definir abaixo</option>
+                    </select>
+                    <input type="number" id="adminQtdSenhas" value="1" min="1" max="100"
+                        style="width:60px;background:#000;color:#fff;border:1px solid #333;padding:7px;border-radius:6px;font-family:inherit;font-size:0.54rem;outline:none;text-align:center;">
+                </div>
+                <div id="adminCustomFields" style="display:none;gap:6px;margin-bottom:8px;flex-wrap:wrap;">
+                    <input type="number" id="adminCustomUsos" placeholder="Usos" style="flex:1;min-width:70px;background:#000;color:#fff;border:1px solid #333;padding:6px;border-radius:5px;font-family:inherit;font-size:0.50rem;outline:none;">
+                    <input type="number" id="adminCustomPdfs" placeholder="PDFs" style="flex:1;min-width:70px;background:#000;color:#fff;border:1px solid #333;padding:6px;border-radius:5px;font-family:inherit;font-size:0.50rem;outline:none;">
+                    <input type="number" id="adminCustomDias" placeholder="Dias válido" style="flex:1;min-width:70px;background:#000;color:#fff;border:1px solid #333;padding:6px;border-radius:5px;font-family:inherit;font-size:0.50rem;outline:none;">
+                </div>
+                <button onclick="adminGerarSenhas()" class="btn-main" style="font-size:0.60rem;">GERAR SENHAS</button>
+                <div id="adminSenhasGeradas" style="margin-top:10px;font-size:0.50rem;color:#4ade80;line-height:2;word-break:break-all;"></div>
+            </div>
+
+            <!-- LISTA DE LICENÇAS -->
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.62rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;">📋 Licenças</div>
+            <div style="background:#111;border:1px solid #222;border-radius:8px;padding:10px;margin-bottom:16px;max-height:280px;overflow-y:auto;">
+                <div id="adminListaLicencas" style="font-size:0.48rem;color:#737373;">Carregando...</div>
+            </div>
+
+            <!-- MENSAGENS DOS USUÁRIOS -->
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.62rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;">📩 Mensagens</div>
+            <div style="background:#111;border:1px solid #222;border-radius:8px;padding:10px;margin-bottom:16px;max-height:300px;overflow-y:auto;">
+                <div id="adminListaMsgs" style="font-size:0.48rem;color:#737373;">Carregando...</div>
+            </div>
+
+            <!-- PROPAGANDA PUSH -->
+            <div style="font-family:'Syne',sans-serif;color:var(--gold);font-size:0.62rem;font-weight:800;letter-spacing:1px;margin-bottom:8px;text-transform:uppercase;">📣 Propaganda / Aviso</div>
+            <div style="background:#111;border:1px solid #222;border-radius:8px;padding:12px;margin-bottom:16px;">
+                <textarea id="adminPropMsg" placeholder="Digite o aviso ou propaganda..." rows="3"
+                    style="width:100%;background:#000;border:1px solid #333;color:#fff;padding:8px;border-radius:6px;font-family:inherit;font-size:0.54rem;resize:none;outline:none;margin-bottom:8px;"></textarea>
+                <button onclick="adminEnviarProp()" class="btn-main" style="font-size:0.60rem;background:#164e63;border-color:#0e7490;">PUBLICAR PARA TODOS OS USUÁRIOS</button>
+                <div id="adminPropStatus" style="font-size:0.48rem;color:#737373;margin-top:6px;text-align:center;"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- AVISO DE PROPAGANDA (visível para usuários) -->
+    <div id="avisoProps" style="display:none;position:fixed;bottom:70px;left:12px;right:12px;background:#0a1a2a;border:1px solid #0e7490;border-radius:8px;padding:10px 14px;z-index:7000;font-size:0.54rem;color:#38bdf8;line-height:1.5;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>📣 <b>Aviso do Suporte:</b> <span id="avisoPropsTexto"></span></div>
+            <button onclick="document.getElementById('avisoProps').style.display='none'" style="background:none;border:none;color:#38bdf8;cursor:pointer;font-size:0.8rem;margin-left:8px;">✕</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════════
+// SET ELÉTRICO PRO v2 — Engenharia Elétrica Cinematográfica
+// Propriedade: Denilson Alves Vianna — Diretor de Fotografia
+//
+// BASE NORMATIVA (revisão 2026):
+//  FP_LED    = 0.95  IEC 61000-3-2:2018 classe C (fontes chaveadas/LED)
+//  FP_ANALOG = 1.00  Carga resistiva pura (tungstênio/halógeno/HMI balastro)
+//  Margem 1.25×      NBR 5410:2004 §9.9.3 — carga contínua
+//  BREAKER_SCALE     NBR IEC 60898-1 — escala comercial brasileira
+//  conductorForAmp   NBR 5410 Tab.36, Método B2, PVC 70°C, T.amb 30°C
+//  kWh/8h            E = (P_total_W / 1000) × 8h
+//  Custo/8h          kWh × tarifa total (ANEEL 2025-2026 c/ ICMS + encargos setoriais)
+//  ATENÇÃO: tarifas incluem ICMS estadual, COSIP, PIS/COFINS e encargos — bandeira amarela
+//  FFD               First Fit Decreasing — distribuição de circuitos
+//
+// CORREÇÕES v2:
+//  [FIX-1] triggerReportPrint() definida — botão PDF funcionava quebrando
+//  [FIX-2] Descasamento tensão: detecta ambos os sentidos (i.v !== lineV)
+//  [FIX-3] calcFooter via updateContacts() agora usa circuitos reais do estado
+//  [FIX-4] Disjuntor inicia em "—" quando set vazio (era "10A" enganoso)
+// ════════════════════════════════════════════════════════════════════
+
+    let set = [];
+    let _lastCircuits = [];  // FIX-3: cache dos circuitos para updateContacts
+    // ════════════════════════════════════════════════
+    // SISTEMA DE LICENCIAMENTO — Firebase Realtime DB
+    // Senhas formato: DV-XXXX-XXXX (aleatório)
+    // Tipos: VENDA(10 usos/3 PDF) | DEMO(3 usos/0 PDF)
+    // Super Admin: denilsonavianna@gmail.com
+    // ════════════════════════════════════════════════
+    const MASTER_KEY   = "DV-MASTER-2026"; // chave local de emergência
+    const DEMO_MAX     = 3;   // usos gratuitos
+    const USE_MAX      = 10;  // usos licença comprada
+    const PDF_MAX      = 3;   // PDFs por licença
+    const DEMO_KEY     = 'sep_demo_uses';
+
+    let licenseKey    = null;  // chave ativa
+    let licenseData   = null;  // dados do Firebase
+    let isDemo        = false; // modo demo
+    let currentTab    = 'demo';
+
+    function switchTab(tab) {
+        currentTab = tab;
+        document.getElementById('panelDemo').style.display = tab==='demo' ? 'block' : 'none';
+        document.getElementById('panelPago').style.display = tab==='pago' ? 'block' : 'none';
+        document.getElementById('tabDemo').style.background = tab==='demo' ? '#2a2000' : '#1a1a00';
+        document.getElementById('tabPago').style.background = tab==='pago' ? '#2a1000' : '#1a0a00';
+    }
+
+    function verPix() {
+        document.getElementById('pixModal').style.display = 'flex';
+    }
+
+    // ── DEMO ──────────────────────────────────────────
+    function entrarDemo() {
+        let uses = parseInt(localStorage.getItem(DEMO_KEY) || '0');
+        if (uses >= DEMO_MAX) {
+            alert('Demo esgotado.\n\nAdquira a licença completa por R$ 50,00.\nContato via WhatsApp após pagamento PIX.');
+            return;
+        }
+        uses++;
+        localStorage.setItem(DEMO_KEY, uses);
+        isDemo = true;
+        licenseKey = null;
+        abrirApp();
+        atualizarContadorDemo();
+    }
+
+    function atualizarContadorDemo() {
+        const uses = parseInt(localStorage.getItem(DEMO_KEY) || '0');
+        const el = document.getElementById('demoCounter');
+        if (!el) return;
+        const restam = DEMO_MAX - uses;
+        if (isDemo || uses > 0) {
+            el.style.display = 'block';
+            el.innerHTML = restam > 0
+                ? `⚡ Demo: ${uses}/${DEMO_MAX} usos · <b>${restam} restante${restam!==1?'s':''}</b>`
+                : `⚠ Demo esgotado — <a href="#" onclick="verPix()" style="color:var(--gold)">Adquirir R$50</a>`;
+        }
+    }
+
+    // ── LICENÇA FIREBASE ──────────────────────────────
+    function unlock() {
+        const typed = (document.getElementById('passKey').value || '')
+            .trim().toUpperCase()
+            .replace(/[\u2012\u2013\u2014]/g, "-");
+
+        // Chave master local — acesso total (emergência/admin)
+        if (typed === MASTER_KEY) {
+            isDemo = false; licenseKey = MASTER_KEY;
+            abrirApp();
+            return;
+        }
+
+        if (!typed || typed.length < 8) {
+            setLockMsg('⚠ Informe a senha recebida após o pagamento.');
+            return;
+        }
+
+        setLockMsg('🔍 Verificando licença...');
+
+        // Validar no Firebase
+        window.db?.ref('licencas/' + typed).once('value')
+            .then(snap => {
+                const data = snap.val();
+                if (!data) {
+                    setLockMsg('❌ Senha inválida. Verifique e tente novamente.');
+                    return;
+                }
+                if (data.status === 'bloqueada') {
+                    setLockMsg('🔴 Licença bloqueada. Entre em contato com o suporte.');
+                    return;
+                }
+                if (data.usos >= data.maxUsos) {
+                    setLockMsg('⚠ Limite de usos atingido. Adquira uma nova licença.');
+                    return;
+                }
+                // Verificar validade
+                if (data.validade && Date.now() > data.validade) {
+                    setLockMsg('⚠ Licença expirada. Renove sua assinatura.');
+                    return;
+                }
+                // Licença válida — incrementar uso
+                const novosUsos = (data.usos || 0) + 1;
+                window.db?.ref('licencas/' + typed).update({
+                    usos: novosUsos,
+                    ultimoUso: Date.now(),
+                    dispositivo: navigator.userAgent.substring(0,80)
+                }).then(() => {
+                    licenseKey  = typed;
+                    licenseData = { ...data, usos: novosUsos };
+                    isDemo      = false;
+                    abrirApp();
+                });
+            })
+            .catch(() => {
+                // Offline — verificar localStorage como fallback
+                const cached = localStorage.getItem('sep_lic_' + typed);
+                if (cached) {
+                    licenseKey  = typed;
+                    licenseData = JSON.parse(cached);
+                    isDemo      = false;
+                    abrirApp();
+                    setLockMsg('⚡ Offline — usando licença em cache.');
+                } else {
+                    setLockMsg('📡 Sem conexão. Conecte-se para ativar pela primeira vez.');
+                }
+            });
+    }
+
+    function setLockMsg(msg) {
+        const el = document.getElementById('lockMsg');
+        if (el) el.innerHTML = msg;
+    }
+
+    function abrirApp() {
+        document.getElementById('lockScreen').style.display = 'none';
+        document.getElementById('mainApp').style.display    = 'block';
+        // Cache da licença para uso offline
+        if (licenseKey && licenseData) {
+            localStorage.setItem('sep_lic_' + licenseKey, JSON.stringify(licenseData));
+        }
+        render();
+        setTimeout(function() {
+            var h = document.querySelector('header');
+            if (h) document.body.style.paddingTop = (h.offsetHeight + 8) + 'px';
+        }, 50);
+        atualizarBadgeLicenca();
+        // Verificar propaganda após abrir app
+        setTimeout(verificarPropaganda, 2000);
+    }
+
+    function atualizarBadgeLicenca() {
+        // Mostrar contador de usos no header
+        const badge = document.getElementById('licenseBadge');
+        if (!badge) return;
+        if (isDemo) {
+            const uses = parseInt(localStorage.getItem(DEMO_KEY) || '0');
+            badge.innerHTML = `DEMO ${uses}/${DEMO_MAX}`;
+            badge.style.color = '#f59e0b';
+        } else if (licenseKey === MASTER_KEY) {
+            badge.innerHTML = 'ADMIN ∞';
+            badge.style.color = '#c8922a';
+        } else if (licenseData) {
+            badge.innerHTML = `${licenseData.usos}/${licenseData.maxUsos} usos`;
+            badge.style.color = licenseData.usos >= licenseData.maxUsos * 0.8 ? '#ef4444' : '#4ade80';
+        }
+    }
+    let tempName = "", tempWatt = 0, tempIsGen = false, tempIsAnalog = false;
+
+    const FP_LED    = 0.95;
+    const FP_ANALOG = 1.00;
+    const BREAKER_SCALE = [10, 16, 20, 25, 32, 40, 50, 63, 80, 100, 125];
+
+    const CIRCUIT_TYPES = [
+        { label:"A", breakerA:20,  safeA:16,  cable:"2.5mm²", desc:"Tomada Padrão NBR 14136 (20A / 2.5mm²)"           },
+        { label:"B", breakerA:32,  safeA:25,  cable:"4.0mm²", desc:"Circuito Dedicado de Set (32A / 4.0mm²)"           },
+        { label:"C", breakerA:50,  safeA:40,  cable:"10mm²",  desc:"Fase Industrial de Quadro de Cena (50A / 10mm²)"   },
+        { label:"D", breakerA:80,  safeA:63,  cable:"25mm²",  desc:"Fase Pesada / Alimentação Estrutural (80A / 25mm²)" },
+        { label:"E", breakerA:125, safeA:100, cable:"50mm²",  desc:"Entrada de Cabine / Barramento (125A / 50mm²)"     }
+    ];
+
+    // NBR 5410 Tab.36 — Método B2, PVC 70°C, Tamb 30°C
+    function conductorForAmp(a) {
+        if (a <= 15)  return "1.5mm²";
+        if (a <= 21)  return "2.5mm²";
+        if (a <= 28)  return "4.0mm²";
+        if (a <= 36)  return "6.0mm²";
+        if (a <= 50)  return "10mm²";
+        if (a <= 68)  return "16mm²";
+        if (a <= 89)  return "25mm²";
+        return "≥35mm² — Consultar engenheiro elétrico";
+    }
+
+    function unitAmp(item, lineV) {
+        return (item.w * item.q) / (lineV * (item.a ? FP_ANALOG : FP_LED));
+    }
+
+    function togglePass() {
+        const inp = document.getElementById('passKey');
+        const btn = document.getElementById('eyeBtn');
+        if (inp.type==='password') { inp.type='text'; btn.textContent='🙈'; inp.style.letterSpacing='2px'; }
+        else { inp.type='password'; btn.textContent='👁'; inp.style.letterSpacing='4px'; }
+    }
+
+    function updateContacts() {
+        const resp  = document.getElementById('projectResp').value.trim()  || "Não Definido";
+        const phone = document.getElementById('projectPhone').value.trim() || "—";
+        const email = document.getElementById('projectEmail').value.trim() || "—";
+        ['dashResp','printResp'].forEach(id => document.getElementById(id).innerText = resp);
+        ['dashPhone','printPhone'].forEach(id => document.getElementById(id).innerText = phone);
+        ['dashEmail','printEmail'].forEach(id => document.getElementById(id).innerText = email);
+        // FIX-3: atualiza rodapé de impressão com circuitos reais em cache
+        if (set.length > 0) {
+            const tw     = set.reduce((s,i) => s + i.w*i.q, 0);
+            const lineV  = parseInt(document.getElementById('lineVoltageSelect').value);
+            const op     = document.getElementById('operatorSelect');
+            const rate   = parseFloat(op.value);
+            const opName = op.options[op.selectedIndex].text;
+            const kwhD   = (tw/1000)*8;
+            let ampTotal = 0;
+            set.forEach(i => {
+                ampTotal += (i.w*i.q) / (lineV * (i.a ? FP_ANALOG : FP_LED));
+            });
+            const safetyAmp = ampTotal * 1.25;
+            const breakerVal = BREAKER_SCALE.find(b => b >= safetyAmp) || 125;
+            calcFooter(tw, lineV, ampTotal.toFixed(1)+"A", breakerVal+"A", opName,
+                       "R$ "+(kwhD*rate).toFixed(2), conductorForAmp(breakerVal),
+                       _lastCircuits, kwhD.toFixed(2));
+        }
+    }
+
+    function openPage(id) {
+        const page = document.getElementById('page-'+id);
+        if (!page) return;
+        const btn  = document.getElementById('btn-'+id);
+        const was  = page.classList.contains('active');
+        document.querySelectorAll('.equip-page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.m-nav').forEach(b => b.classList.remove('active'));
+        if (!was) {
+            page.classList.add('active');
+            if (btn) btn.classList.add('active');
+            // Catálogo: renderiza ao abrir
+            if (id === 'catalog') renderCatalog();
+        }
+    }
+
+    function askVoltage(n, w, isGen, isAnalog=false) {
+        tempName=n; tempWatt=w; tempIsGen=isGen; tempIsAnalog=isAnalog;
+        document.getElementById('vModalTitle').innerText = n;
+        document.getElementById('voltageModal').style.display = 'flex';
+    }
+
+    function askVoltageManual() {
+        const n = document.getElementById('manName').value.trim();
+        const w = parseInt(document.getElementById('manWatt').value);
+        if (n && w > 0) {
+            tempName=n; tempWatt=w; tempIsGen=false; tempIsAnalog=false;
+            document.getElementById('vModalTitle').innerText = n;
+            document.getElementById('voltageModal').style.display = 'flex';
+        } else {
+            alert("Preencha o nome e a potência em watts.");
+        }
+    }
+
+    function confirmVoltage(volts) {
+        document.getElementById('voltageModal').style.display = 'none';
+        add(tempName, tempWatt, tempIsGen, volts, tempIsAnalog);
+        document.getElementById('manName').value='';
+        document.getElementById('manWatt').value='';
+        document.getElementById('page-manual').classList.remove('active');
+        document.getElementById('btn-manual').classList.remove('active');
+    }
+
+    function add(n, w, isGen, volts, isAnalog=false) {
+        const item = set.find(i => i.n===n && i.v===volts);
+        if (item) { item.q++; } else { set.push({n,w,q:1,g:isGen,v:volts,a:isAnalog}); }
+        render();
+    }
+
+    function change(n, volts, d) {
+        const item = set.find(i => i.n===n && i.v===volts);
+        if (item) {
+            item.q += d;
+            if (item.q <= 0) set = set.filter(i => !(i.n===n && i.v===volts));
+        }
+        render();
+    }
+
+    function render() {
+        const list  = document.getElementById('itemList');
+        const pBody = document.getElementById('pBody');
+        list.innerHTML=''; pBody.innerHTML='';
+        let tw = 0;
+        set.forEach(i => {
+            tw += i.w * i.q;
+            const fpStr = i.a ? '1.00' : '0.95';
+            const safeN = i.n.replace(/'/g, "\\'");
+            list.innerHTML += `<div class="item-row">
+                <div style="flex:1"><b style="font-size:0.62rem;">${i.n}</b>
+                <div class="item-meta">${i.w}W · ${i.v}V · FP:${fpStr} · ×${i.q} = ${i.w*i.q}W</div></div>
+                <div class="qty-controls">
+                    <button class="qty-btn" onclick="change('${safeN}',${i.v},-1)">−</button>
+                    <span style="font-weight:700;font-size:13px;min-width:16px;text-align:center;">${i.q}</span>
+                    <button class="qty-btn" onclick="change('${safeN}',${i.v},1)">+</button>
+                </div></div>`;
+            pBody.innerHTML += `<tr><td>${i.n}</td><td>${i.v}V</td><td>${i.q}</td>
+                <td>${fpStr}</td><td>${i.w}W</td><td>${i.w*i.q}W</td></tr>`;
+        });
+        document.getElementById('summaryDash').style.display = set.length > 0 ? 'block' : 'none';
+        calc(tw);
+    }
+
+    // ════════════════════════════════════════════════════════
+    // CÁLCULO ELÉTRICO PRINCIPAL — NBR 5410
+    // I = Σ [ P_i / (V × FP_i) ]  — corrente real segregada por tipo de carga
+    // Disjuntor = próximo valor comercial acima de I_total × 1.25
+    // ════════════════════════════════════════════════════════
+    function calc(tw) {
+        const lineV    = parseInt(document.getElementById('lineVoltageSelect').value);
+        const opSelect = document.getElementById('operatorSelect');
+        const rate     = parseFloat(opSelect.value);
+        const opName   = opSelect.options[opSelect.selectedIndex].text;
+
+        let ampLED = 0, ampAnalog = 0;
+        set.forEach(i => {
+            if (i.a) ampAnalog += (i.w*i.q) / (lineV * FP_ANALOG);
+            else     ampLED    += (i.w*i.q) / (lineV * FP_LED);
+        });
+        const ampTotal = ampLED + ampAnalog;
+
+        // Energia: E = P(kW) × t(h)
+        const kwhDiaria = (tw / 1000) * 8;
+        const kwhStr    = kwhDiaria.toFixed(2);
+        const custoStr  = `R$ ${(kwhDiaria * rate).toFixed(2)}`; // tarifa c/ ICMS + encargos ANEEL 2025-2026
+
+        // Disjuntor geral: I_dim = I_total × 1.25 (NBR 5410 §9.9.3 — carga contínua)
+        let breakerVal = 0, safetyTip = "Insira refletores para iniciar o mapeamento elétrico.", safetyClass = "";
+
+        if (tw === 0) {
+            // set vazio — FIX-4: não mostrar "10A" enganoso
+            document.getElementById('resD').innerText = "—";
+            document.getElementById('dashD').innerText = "—";
+        } else {
+            const safetyAmp = ampTotal * 1.25;
+            breakerVal = BREAKER_SCALE.find(b => b >= safetyAmp) || 125;
+            const cond = conductorForAmp(breakerVal);
+
+            if      (breakerVal <= 16) { safetyTip=`Carga equilibrada — condutor ${cond} · disjuntor geral ${breakerVal}A.`; }
+            else if (breakerVal <= 32) { safetyTip=`Atenção: circuito dedicado necessário — condutor ${cond} · disjuntor ${breakerVal}A.`; safetyClass="warn"; }
+            else if (breakerVal <= 63) { safetyTip=`Alta intensidade — infraestrutura reforçada obrigatória — condutor ${cond} · disjuntor ${breakerVal}A.`; safetyClass="warn"; }
+            else                       { safetyTip=`🔴 CARGA CRÍTICA — quadro dedicado obrigatório — condutor ${cond} · disjuntor ${breakerVal}A. Acione engenheiro elétrico.`; safetyClass="danger"; }
+
+            document.getElementById('resD').innerText = breakerVal+"A";
+            document.getElementById('dashD').innerText = breakerVal+"A";
+        }
+
+        // FIX-2: descasamento detecta AMBOS os sentidos — subtensão e sobretensão
+        let mismatch = false, mismatchDir = "";
+        set.forEach(i => {
+            if (i.v !== lineV) {
+                mismatch = true;
+                mismatchDir = i.v > lineV ? "SOBRETENSÃO" : "SUBTENSÃO";
+            }
+        });
+        if (mismatch) {
+            safetyTip = `⚠️ DESCASAMENTO DE TENSÃO (${mismatchDir}): equipamentos com tensão nominal diferente de ${lineV}V detectados. RISCO REAL DE DANO E INCÊNDIO — corrija antes de ligar.`;
+            safetyClass = "danger";
+        }
+
+        document.getElementById('resW').innerText  = tw+"W";
+        document.getElementById('resA').innerText  = ampTotal.toFixed(1)+"A";
+        document.getElementById('resE').innerText  = kwhStr;
+        document.getElementById('resC').innerText  = custoStr;
+        document.getElementById('cardW').classList.toggle('alert', mismatch);
+        document.getElementById('cardA').classList.toggle('alert', mismatch);
+
+        document.getElementById('dashW').innerText = tw+"W";
+        document.getElementById('dashE').innerText = kwhStr+" kWh";
+        document.getElementById('dashA').innerText = ampTotal.toFixed(1)+"A";
+        document.getElementById('dashC').innerText = custoStr;
+
+        document.getElementById('safetyTip').innerText = safetyTip;
+        document.getElementById('safetyBar').className = 'safety-bar' + (safetyClass ? ' '+safetyClass : '');
+
+        const circuits = calcDistribution(lineV);
+        _lastCircuits = circuits; // FIX-3: cache
+        renderDistPanel(circuits);
+        calcFooter(tw, lineV, ampTotal.toFixed(1)+"A", breakerVal ? breakerVal+"A" : "—", opName,
+                   custoStr, conductorForAmp(breakerVal || 0), circuits, kwhStr);
+    }
+
+    // ════════════════════════════════════════════════════════
+    // DISTRIBUIÇÃO — First Fit Decreasing (FFD)
+    // Aloca cada unidade no menor circuito disponível que comporte
+    // a corrente acumulada com margem 1.25× sobre o safeA do tipo.
+    // ════════════════════════════════════════════════════════
+    function calcDistribution(lineV) {
+        if (set.length === 0) return [];
+        const units = [];
+        set.forEach(item => {
+            const ua = (item.w) / (lineV * (item.a ? FP_ANALOG : FP_LED));
+            for (let q = 0; q < item.q; q++) {
+                units.push({ name:item.n, watt:item.w, volt:item.v, amp:ua, analog:item.a });
+            }
+        });
+        units.sort((a,b) => b.amp - a.amp);
+
+        const maxNeeded = units[0].amp * 1.25;
+        let startType = CIRCUIT_TYPES.findIndex(t => t.safeA >= maxNeeded);
+        if (startType < 0) startType = CIRCUIT_TYPES.length - 1;
+
+        const circuits = [];
+        units.forEach(unit => {
+            const neededA = unit.amp * 1.25;
+            let placed = false;
+            for (let c of circuits) {
+                if ((c.usedA + unit.amp) * 1.25 <= c.type.safeA) {
+                    c.usedA += unit.amp;
+                    c.items.push(unit);
+                    placed = true;
+                    break;
+                }
+            }
+            if (!placed) {
+                let ti = CIRCUIT_TYPES.findIndex(t => t.safeA >= neededA);
+                if (ti < 0) ti = CIRCUIT_TYPES.length - 1;
+                if (ti < startType) ti = startType;
+                circuits.push({ type:CIRCUIT_TYPES[ti], usedA:unit.amp, items:[unit] });
+            }
+        });
+        return circuits;
+    }
+
+    function renderDistPanel(circuits) {
+        const panel   = document.getElementById('distPanel');
+        const content = document.getElementById('distContent');
+        if (circuits.length === 0) { panel.style.display='none'; return; }
+        panel.style.display = 'block';
+        let html = '', hasOverload = false;
+
+        circuits.forEach((c, idx) => {
+            const pct  = Math.min((c.usedA / c.type.safeA) * 100, 100);
+            const cls  = pct > 85 ? 'crit' : pct > 65 ? 'warn' : 'ok';
+            const bCls = pct > 85 ? 'badge-crit' : pct > 65 ? 'badge-warn' : 'badge-ok';
+            const stxt = pct > 85 ? '⚠ ATENÇÃO' : pct > 65 ? 'MODERADO' : 'SEGURO';
+            const livreA = (c.type.safeA - c.usedA).toFixed(1);
+            if (pct > 85) hasOverload = true;
+
+            const grouped = c.items.reduce((acc, u) => {
+                const f = acc.find(x => x.n === u.name);
+                if (f) { f.q++; f.w += u.watt; f.a += u.amp; }
+                else acc.push({ n:u.name, q:1, w:u.watt, a:u.amp });
+                return acc;
+            }, []);
+
+            const tipOrg = c.type.label === 'A'
+                ? '💡 Tomada NBR 14136 dedicada — não use extensão com benjamim.'
+                : c.type.label === 'B'
+                ? '💡 Cabo PP 4.0mm² até o equip. — máx. 30m antes de verificar queda de tensão.'
+                : c.type.label === 'C'
+                ? '⚡ Fase industrial — cabo PP 10mm². Disjuntor exclusivo no quadro de cena.'
+                : '🔴 Alimentação estrutural — cabo ≥25mm². Quadro dedicado obrigatório.';
+
+            const refList = grouped.map(g =>
+                `<div class="ref-line">
+                    <span class="ref-arrow">→</span>
+                    <span class="ref-name">${g.n}${g.q > 1 ? ' <b>×'+g.q+'</b>' : ''}</span>
+                    <span class="ref-metrics">${g.w*g.q}W · ${g.a.toFixed(1)}A</span>
+                </div>`
+            ).join('');
+
+            html += `<div class="circuit-card c-${cls}">
+                <div class="circuit-head">
+                    <div class="circuit-id">LINHA ${String(idx+1).padStart(2,'0')} — Tipo ${c.type.label}</div>
+                    <span class="circuit-badge ${bCls}">${stxt}</span>
+                </div>
+                <div class="circuit-specs" style="grid-template-columns:repeat(4,1fr);">
+                    <div class="cspec"><div class="cspec-label">Corrente</div><div class="cspec-val">${c.usedA.toFixed(1)}A</div></div>
+                    <div class="cspec"><div class="cspec-label">Disjuntor</div><div class="cspec-val">${c.type.breakerA}A</div></div>
+                    <div class="cspec"><div class="cspec-label">Bitola</div><div class="cspec-val">${c.type.cable}</div></div>
+                    <div class="cspec"><div class="cspec-label">Folga</div><div class="cspec-val" style="color:#4ade80;">${livreA}A</div></div>
+                </div>
+                <div class="circuit-bar-wrap"><div class="circuit-bar ${cls}" style="width:${pct.toFixed(1)}%"></div></div>
+                <div class="ref-list">${refList}</div>
+                <div class="circuit-tip">${tipOrg}</div>
+            </div>`;
+        });
+
+        const typeSet = [...new Set(circuits.map(c => c.type.label))];
+        if (typeSet.some(t => 'CDE'.includes(t))) {
+            html += `<div class="dist-warn-box">⚡ Set com circuitos industriais. Exija quadro de cena com disjuntores individuais por linha. Nunca use extensões domésticas acima de 20A.</div>`;
+        }
+        if (hasOverload) {
+            html += `<div class="dist-warn-box danger">🔴 Uma ou mais linhas com carga >85%. Redistribua antes de ligar.</div>`;
+        }
+        html += `<div class="dist-note"><b>Regra de ouro:</b> cada LINHA = um cabo independente do quadro ao equipamento. Nunca misture refletores de linhas diferentes na mesma tomada. A coluna <b>Folga</b> mostra ampères disponíveis para expansão. Extensões acima de 20m: verifique queda de tensão (limite 5% — NBR 5410 §6.3.2).</div>`;
+        content.innerHTML = html;
+    }
+
+    function triggerReportPrint() {
+        if (set.length === 0) {
+            alert("Insira ao menos um equipamento antes de emitir a Ordem de Carga.");
+            return;
+        }
+        // Verificar limite de PDF por licença
+        if (isDemo) {
+            alert("⚠ A emissão de PDF não está disponível no modo demo.\n\nAdquira a licença completa por R$ 50,00.");
+            return;
+        }
+        if (licenseKey && licenseKey !== MASTER_KEY && licenseData) {
+            const pdfsUsados = licenseData.pdfs || 0;
+            if (pdfsUsados >= PDF_MAX) {
+                alert(`⚠ Limite de ${PDF_MAX} PDFs atingido para esta licença.\n\nAdquira uma nova licença para continuar emitindo relatórios.`);
+                return;
+            }
+            // Incrementar contador de PDFs no Firebase
+            const novosPdfs = pdfsUsados + 1;
+            window.db?.ref('licencas/' + licenseKey).update({ pdfs: novosPdfs });
+            licenseData.pdfs = novosPdfs;
+        }
+        window.print();
+    }
+
+    function calcFooter(tw, lineV, amp, disjuntor, opName, custoStr, conductor, circuits, kwhStr) {
+        const resp  = document.getElementById('projectResp').value.trim()  || "Não Definido";
+        const phone = document.getElementById('projectPhone').value.trim() || "—";
+        const email = document.getElementById('projectEmail').value.trim() || "—";
+
+        document.getElementById('pFooter').innerHTML = `
+            <strong>MÉTRICAS OPERACIONAIS E DIRETRIZES DE SEGURANÇA (NBR 5410 — DIÁRIA DE 8 HORAS):</strong><br>
+            • Potência Ativa Demandada no Set: <b>${tw}W</b><br>
+            • Consumo de Energia da Diária (8h): <b>${kwhStr} kWh</b><br>
+            • Tensão da Linha Principal: <b>${lineV}V</b><br>
+            • Corrente Total de Linha (Fator de Potência aplicado): <b>${amp}</b><br>
+            • Condutor Mínimo de Entrada (NBR 5410 Tab.36, Mét. B2): <b>${conductor}</b><br>
+            • Disjuntor Geral Recomendado (margem 25%): <b>${disjuntor}</b><br>
+            • Nº de Circuitos Distribuídos: <b>${circuits.length}</b><br>
+            • Infraestrutura / Concessionária: <b>${opName}</b><br>
+            • Custo de Insumos Energéticos Consolidado (8h): <b>${custoStr}</b><br>
+            <span style="font-size:10px;font-weight:bold;border-top:1px dashed #000;padding-top:6px;display:block;margin-top:4px;">
+                Responsável Luminotécnico: ${resp} &nbsp;|&nbsp; ${phone} &nbsp;|&nbsp; ${email}
+            </span>
+            <span style="font-size:9px;color:#555;font-style:italic;display:block;margin-top:3px;">
+                Patente e Propriedade de Software: Denilson Alves Vianna — Diretor de Fotografia
+            </span>
+            <div style="margin-top:10px;padding:8px 10px;border:1px solid #999;border-left:3px solid #333;background:#f9f9f9;font-size:8.5px;color:#333;line-height:1.6;">
+                <strong>⚠ AVISO DE RESPONSABILIDADE TÉCNICA</strong><br>
+                Este documento foi gerado pelo software SET ELÉTRICO PRO como ferramenta auxiliar de planejamento luminotécnico. Os dados, dimensionamentos e recomendações aqui contidos baseiam-se exclusivamente nas informações inseridas pelo usuário e nos parâmetros da NBR 5410, não substituindo a avaliação presencial de profissional habilitado.<br>
+                <strong>A responsabilidade técnica e legal pela instalação elétrica, segurança do set e conformidade normativa é exclusiva do Técnico ou Engenheiro Elétrico responsável pela obra.</strong> Toda instalação deve ser inspecionada e liberada por profissional legalmente habilitado antes da energização. O autor do software não responde por danos materiais, pessoais ou acidentes decorrentes do uso desta ferramenta.
+            </div>`;
+
+        let printC = `<strong>DISTRIBUIÇÃO DE CIRCUITOS (NBR 5410 · NBR IEC 60898-1):</strong><br>
+            <table style="width:100%;border-collapse:collapse;font-size:9px;margin-top:6px;">
+            <tr style="background:#f0f0f0">
+                <th style="border:1px solid #000;padding:4px;">Circuito</th>
+                <th style="border:1px solid #000;padding:4px;">Tipo</th>
+                <th style="border:1px solid #000;padding:4px;">Corrente</th>
+                <th style="border:1px solid #000;padding:4px;">Disjuntor</th>
+                <th style="border:1px solid #000;padding:4px;">Bitola</th>
+                <th style="border:1px solid #000;padding:4px;">Equipamentos</th>
+            </tr>`;
+        circuits.forEach((c, idx) => {
+            const names = c.items.map(u => u.name)
+                .reduce((a,n) => { const f=a.find(x=>x.n===n); if(f)f.q++; else a.push({n,q:1}); return a; }, [])
+                .map(x => x.q > 1 ? `${x.n}×${x.q}` : x.n).join(', ');
+            printC += `<tr>
+                <td style="border:1px solid #000;padding:4px;font-weight:700;">${String(idx+1).padStart(2,'0')}</td>
+                <td style="border:1px solid #000;padding:4px;">${c.type.label} — ${c.type.desc}</td>
+                <td style="border:1px solid #000;padding:4px;">${c.usedA.toFixed(1)}A</td>
+                <td style="border:1px solid #000;padding:4px;font-weight:700;">${c.type.breakerA}A</td>
+                <td style="border:1px solid #000;padding:4px;font-weight:700;">${c.type.cable}</td>
+                <td style="border:1px solid #000;padding:4px;">${names}</td>
+            </tr>`;
+        });
+        printC += `</table>`;
+        document.getElementById('printCircuits').innerHTML = printC;
+
+        document.getElementById('qrcode').innerHTML = "";
+        new QRCode(document.getElementById("qrcode"), { text: window.location.href, width:70, height:70 });
+    }
+
+    // ════════════════════════════════════════════════════════
+    // CATÁLOGO EDITÁVEL — localStorage persistence
+    // Permite ao usuário/técnico manter catálogo próprio de
+    // equipamentos, persistido no dispositivo.
+    // ════════════════════════════════════════════════════════
+    // ================================================
+    // SISTEMA DE TARIFAS EDITAVEIS — localStorage
+    // ================================================
+    var TARIFAS_DEFAULT = [
+        { nome: "Light RJ",     valor: 1.74 },
+        { nome: "Enel RJ",      valor: 1.68 },
+        { nome: "Enel SP",      valor: 1.62 },
+        { nome: "Cemig MG",     valor: 1.55 },
+        { nome: "Copel PR",     valor: 1.59 },
+        { nome: "Celesc SC",    valor: 1.48 },
+        { nome: "Coelba BA",    valor: 1.52 },
+        { nome: "Coelce CE",    valor: 1.49 },
+        { nome: "Cosern RN",    valor: 1.51 },
+        { nome: "Celpa PA",     valor: 1.46 },
+        { nome: "Equatorial MA",valor: 1.53 },
+        { nome: "CPFL SP",      valor: 1.60 }
+    ];
+
+    function carregarTarifas() {
+        var saved = localStorage.getItem('sep_tarifas');
+        return saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(TARIFAS_DEFAULT));
+    }
+
+    function salvarTarifas(lista) {
+        localStorage.setItem('sep_tarifas', JSON.stringify(lista));
+    }
+
+    function popularSelectTarifas() {
+        var sel = document.getElementById('operatorSelect');
+        if (!sel) return;
+        var tarifas = carregarTarifas();
+        var valorAtual = sel.value;
+        sel.innerHTML = '';
+        tarifas.forEach(function(t) {
+            var opt = document.createElement('option');
+            opt.value = t.valor.toFixed(2);
+            opt.textContent = t.nome + ' — R$ ' + t.valor.toFixed(2) + '/kWh';
+            sel.appendChild(opt);
+        });
+        // Restaurar selecao anterior se possivel
+        if (valorAtual) sel.value = valorAtual;
+    }
+
+    function abrirTarifas() {
+        document.getElementById('modalTarifas').style.display = 'block';
+        renderTarifaLista();
+    }
+
+    function fecharTarifas() {
+        document.getElementById('modalTarifas').style.display = 'none';
+        popularSelectTarifas();
+        render();
+    }
+
+    function renderTarifaLista() {
+        var lista = document.getElementById('tarifaLista');
+        if (!lista) return;
+        var tarifas = carregarTarifas();
+        lista.innerHTML = '';
+        tarifas.forEach(function(t, idx) {
+            var row = document.createElement('div');
+            row.style.cssText = 'display:flex;align-items:center;gap:6px;background:#111;border:1px solid #2a2200;border-radius:5px;padding:6px 8px;';
+            row.innerHTML =
+                '<div style="flex:1;font-size:0.56rem;color:#fff;font-weight:700;">' + t.nome + '</div>' +
+                '<input type="number" step="0.01" min="0.01" value="' + t.valor.toFixed(2) + '" ' +
+                    'style="width:70px;background:#000;color:var(--gold);border:1px solid var(--gold-dim);padding:5px;border-radius:4px;font-family:inherit;font-size:0.58rem;font-weight:700;outline:none;text-align:center;" ' +
+                    'onchange="editarTarifa(' + idx + ',this.value)">' +
+                '<span style="font-size:0.50rem;color:#555;">R$/kWh</span>' +
+                '<button onclick="deletarTarifa(' + idx + ')" style="background:#2d0a0a;border:1px solid #7f1d1d;color:#f87171;padding:4px 8px;border-radius:4px;font-size:0.50rem;cursor:pointer;font-weight:700;flex-shrink:0;">&#10005;</button>';
+            lista.appendChild(row);
+        });
+        if (tarifas.length === 0) {
+            lista.innerHTML = '<div style="font-size:0.54rem;color:#555;text-align:center;padding:10px;">Nenhuma concessionaria. Adicione abaixo.</div>';
+        }
+    }
+
+    function editarTarifa(idx, novoValor) {
+        var v = parseFloat(novoValor);
+        if (isNaN(v) || v <= 0) return;
+        var tarifas = carregarTarifas();
+        tarifas[idx].valor = Math.round(v * 100) / 100;
+        salvarTarifas(tarifas);
+        popularSelectTarifas();
+        render();
+    }
+
+    function deletarTarifa(idx) {
+        var tarifas = carregarTarifas();
+        if (tarifas.length <= 1) { alert('Mantenha ao menos uma concessionaria.'); return; }
+        if (!confirm('Remover "' + tarifas[idx].nome + '"?')) return;
+        tarifas.splice(idx, 1);
+        salvarTarifas(tarifas);
+        renderTarifaLista();
+        popularSelectTarifas();
+        render();
+    }
+
+    function adicionarTarifa() {
+        var nome  = (document.getElementById('tNome').value  || '').trim();
+        var valor = parseFloat(document.getElementById('tValor').value);
+        if (!nome || isNaN(valor) || valor <= 0) {
+            alert('Preencha nome e valor em R$/kWh.'); return;
+        }
+        var tarifas = carregarTarifas();
+        tarifas.push({ nome: nome, valor: Math.round(valor * 100) / 100 });
+        salvarTarifas(tarifas);
+        document.getElementById('tNome').value  = '';
+        document.getElementById('tValor').value = '';
+        renderTarifaLista();
+        popularSelectTarifas();
+        render();
+    }
+
+    function resetarTarifas() {
+        if (!confirm('Restaurar todas as tarifas originais ANEEL 2025-2026? Os seus dados personalizados serao perdidos.')) return;
+        localStorage.removeItem('sep_tarifas');
+        renderTarifaLista();
+        popularSelectTarifas();
+        render();
+    }
+
+    let customCatalog = JSON.parse(localStorage.getItem('sep_catalog') || '[]');
+
+    function saveCatalog() {
+        localStorage.setItem('sep_catalog', JSON.stringify(customCatalog));
+    }
+
+    function renderCatalog() {
+        const list = document.getElementById('catalogList');
+        if (!list) return;
+        if (customCatalog.length === 0) {
+            list.innerHTML = '<div style="font-size:0.54rem;color:#555;text-align:center;padding:12px;">Nenhum equipamento no catálogo personalizado.</div>';
+            return;
+        }
+        list.innerHTML = customCatalog.map((item, idx) => `
+            <div class="cat-item">
+                <div class="cat-item-info">
+                    <div class="cat-item-name">${item.fab} ${item.name}</div>
+                    <div class="cat-item-meta">${item.w}W · FP ${item.analog ? '1.00 (Resistivo)' : '0.95 (LED)'}</div>
+                </div>
+                <button class="cat-use-btn" data-idx="${idx}" data-action="use">+ ADD</button>
+                <button class="cat-del-btn" data-idx="${idx}" data-action="del">✕</button>
+            </div>`).join('');
+        list.querySelectorAll('button[data-action]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const i = parseInt(this.dataset.idx);
+                if (this.dataset.action === 'use') {
+                    const item = customCatalog[i];
+                    if (item) askVoltage(item.fab+' '+item.name, item.w, false, item.analog);
+                } else {
+                    deleteCatalogItem(i);
+                }
+            });
+        });
+    }
+    function addCatalogItem() {
+        const fab  = document.getElementById('catFab').value.trim();
+        const name = document.getElementById('catName').value.trim();
+        const w    = parseInt(document.getElementById('catWatt').value);
+        const fp   = document.getElementById('catFP').value;
+        if (!fab || !name || !w || w <= 0) {
+            alert('Preencha fabricante, modelo e potência em watts.'); return;
+        }
+        customCatalog.push({ fab, name, w, analog: fp === 'analog' });
+        saveCatalog();
+        renderCatalog();
+        document.getElementById('catFab').value  = '';
+        document.getElementById('catName').value = '';
+        document.getElementById('catWatt').value = '';
+        document.getElementById('catFP').value   = 'led';
+    }
+
+    function deleteCatalogItem(idx) {
+        if (!confirm(`Remover "${customCatalog[idx].fab} ${customCatalog[idx].name}" do catálogo?`)) return;
+        customCatalog.splice(idx, 1);
+        saveCatalog();
+        renderCatalog();
+    }
+
+    function reset() {
+        if (confirm("Zerar o set atual? Esta ação não pode ser desfeita.")) {
+            set = [];
+            _lastCircuits = [];
+            render();
+            document.querySelectorAll('.equip-page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.m-nav').forEach(b => b.classList.remove('active'));
+            document.getElementById('distPanel').style.display = 'none';
+            document.getElementById('resD').innerText = "—";
+            document.getElementById('dashD').innerText = "—";
+        }
+    }
+    // ════════════════════════════════════════════════
+    // MANUAL
+    // ════════════════════════════════════════════════
+    function abrirManual() {
+        document.getElementById('modalManual').style.display = 'block';
+        window.scrollTo(0,0);
+    }
+
+    // ════════════════════════════════════════════════
+    // SUPORTE — Mensagens usuário ↔ admin via Firebase
+    // ════════════════════════════════════════════════
+    function abrirSuporte() {
+        document.getElementById('modalSuporte').style.display = 'flex';
+        // Verificar se há resposta do admin para esta sessão
+        const msgId = localStorage.getItem('sep_msg_id');
+        if (msgId && window.db) {
+            window.db?.ref('mensagens/' + msgId).once('value').then(snap => {
+                const d = snap.val();
+                if (d && d.resposta) {
+                    const el = document.getElementById('suporteResposta');
+                    el.style.display = 'block';
+                    el.innerHTML = '💬 <b>Resposta do Suporte:</b><br>' + d.resposta;
+                }
+            });
+        }
+    }
+
+    function fecharSuporte() {
+        document.getElementById('modalSuporte').style.display = 'none';
+    }
+
+    function enviarSuporte() {
+        const nome = document.getElementById('suporteNome').value.trim();
+        const msg  = document.getElementById('suporteMsg').value.trim();
+        const st   = document.getElementById('suporteStatus');
+        if (!nome || !msg) { st.innerHTML = '⚠ Preencha nome e mensagem.'; st.style.color='#ef4444'; return; }
+        if (!window.db) { st.innerHTML = '📡 Sem conexão. Tente novamente.'; st.style.color='#ef4444'; return; }
+        st.innerHTML = 'Enviando...'; st.style.color='#737373';
+        const ref = window.db.ref('mensagens').push();
+        const msgId = ref.key;
+        ref.set({
+            nome: nome,
+            msg: msg,
+            licenca: licenseKey || 'DEMO',
+            ts: Date.now(),
+            lida: false,
+            resposta: null
+        }).then(() => {
+            localStorage.setItem('sep_msg_id', msgId);
+            st.innerHTML = '✅ Mensagem enviada! Responderemos via WhatsApp.';
+            st.style.color = '#4ade80';
+            document.getElementById('suporteMsg').value = '';
+        }).catch(() => {
+            st.innerHTML = '❌ Erro ao enviar. Tente novamente.';
+            st.style.color = '#ef4444';
+        });
+    }
+
+    // ════════════════════════════════════════════════
+    // COMPARTILHAR DEMO — WhatsApp
+    // ════════════════════════════════════════════════
+    function compartilharDemo() {
+        var msg = 'SET ELETRICO PRO - App de planejamento eletrico para sets de filmagem. ' +
+                  'Experimente 3 vezes gratis, sem senha. De Denilson Alves Vianna, Diretor de Fotografia. ' +
+                  window.location.href;
+        var texto = encodeURIComponent(msg);
+        window.open('https://wa.me/?text=' + texto, '_blank');
+    }
+
+    // ════════════════════════════════════════════════
+    // ADMIN — Autenticação e Painel
+    // ════════════════════════════════════════════════
+    const ADMIN_KEY = "DV-MASTER-2026"; // mesma chave master
+
+    function tentarAdmin() {
+        document.getElementById('modalAdminAuth').style.display = 'flex';
+        setTimeout(() => { const el = document.getElementById('adminPassInput'); if(el) el.focus(); }, 100);
+    }
+
+    function verificarAdmin() {
+        const typed = (document.getElementById('adminPassInput').value || '').trim().toUpperCase();
+        if (typed === ADMIN_KEY) {
+            document.getElementById('modalAdminAuth').style.display = 'none';
+            document.getElementById('adminPassInput').value = '';
+            abrirPainelAdmin();
+        } else {
+            document.getElementById('adminAuthMsg').innerHTML = '❌ Senha incorreta';
+        }
+    }
+
+    function fecharAdmin() {
+        document.getElementById('painelAdmin').style.display = 'none';
+    }
+
+    function abrirPainelAdmin() {
+        document.getElementById('painelAdmin').style.display = 'block';
+        adminCarregarDados();
+    }
+
+    function adminCarregarDados() {
+        if (!window.db) { return; }
+        // Carregar licenças
+        window.db.ref('licencas').once('value').then(snap => {
+            const data = snap.val() || {};
+            const keys = Object.keys(data);
+            let ativas = 0;
+            let html = '';
+            keys.forEach(k => {
+                const d = data[k];
+                if (d.status !== 'bloqueada') ativas++;
+                const pct = Math.round((d.usos/d.maxUsos)*100);
+                const cor = d.status==='bloqueada' ? '#ef4444' : pct>=80 ? '#f59e0b' : '#4ade80';
+                html += `<div style="border-bottom:1px solid #1a1a1a;padding:6px 0;display:flex;justify-content:space-between;align-items:center;gap:8px;">
+                    <div style="flex:1;">
+                        <div style="font-size:0.52rem;color:#fff;font-weight:700;">${k}</div>
+                        <div style="font-size:0.44rem;color:#555;">${d.tipo||'venda'} · ${d.usos}/${d.maxUsos} usos · ${d.pdfs||0}/${d.maxPdfs||3} PDFs</div>
+                    </div>
+                    <div style="display:flex;gap:4px;">
+                        <span style="font-size:0.44rem;font-weight:700;color:${cor};">${d.status==='bloqueada'?'BLOQ':pct+'%'}</span>
+                        <button onclick="adminCopiarSenha('${k}')" style="background:#1a1a1a;border:1px solid #333;color:#a3a3a3;padding:2px 6px;border-radius:4px;font-size:0.42rem;cursor:pointer;">📋</button>
+                        <button onclick="adminToggleBloquear('${k}','${d.status}')" style="background:#2d0a0a;border:1px solid #7f1d1d;color:#f87171;padding:2px 6px;border-radius:4px;font-size:0.42rem;cursor:pointer;">${d.status==='bloqueada'?'✓':'🔴'}</button>
+                    </div>
+                </div>`;
+            });
+            document.getElementById('adminListaLicencas').innerHTML = html || '<div style="color:#555;text-align:center;padding:8px;">Nenhuma licença ainda.</div>';
+            document.getElementById('adminTotalAtivas').innerHTML = ativas;
+        });
+        // Carregar mensagens
+        window.db.ref('mensagens').once('value').then(snap => {
+            const data = snap.val() || {};
+            const keys = Object.keys(data);
+            let pendentes = 0;
+            let html = '';
+            keys.sort((a,b) => (data[b].ts||0)-(data[a].ts||0)).forEach(k => {
+                const d = data[k];
+                if (!d.lida) pendentes++;
+                const dt = new Date(d.ts||0).toLocaleDateString('pt-BR');
+                html += `<div style="border-bottom:1px solid #1a1a1a;padding:7px 0;">
+                    <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+                        <span style="font-size:0.52rem;color:#fff;font-weight:700;">${d.nome||'—'}</span>
+                        <span style="font-size:0.42rem;color:#555;">${dt}</span>
+                    </div>
+                    <div style="font-size:0.50rem;color:#a3a3a3;margin-bottom:5px;">${d.msg||''}</div>
+                    <div style="display:flex;gap:4px;">
+                        <input type="text" id="rep_${k}" placeholder="Responder..." style="flex:1;background:#000;border:1px solid #333;color:#fff;padding:4px 6px;border-radius:4px;font-family:inherit;font-size:0.48rem;outline:none;">
+                        <button onclick="adminResponder('${k}')" style="background:var(--gold);border:none;color:#000;padding:4px 8px;border-radius:4px;font-size:0.44rem;font-weight:700;cursor:pointer;">RESP</button>
+                        <button onclick="adminMarcarLida('${k}')" style="background:#111;border:1px solid #333;color:#555;padding:4px 6px;border-radius:4px;font-size:0.44rem;cursor:pointer;">✓</button>
+                    </div>
+                    ${d.resposta ? '<div style="font-size:0.44rem;color:#4ade80;margin-top:3px;">✓ Respondido: '+d.resposta+'</div>' : ''}
+                </div>`;
+            });
+            document.getElementById('adminListaMsgs').innerHTML = html || '<div style="color:#555;text-align:center;padding:8px;">Nenhuma mensagem ainda.</div>';
+            document.getElementById('adminTotalMsgs').innerHTML = pendentes;
+        });
+    }
+
+    function adminGerarSenhas() {
+        if (!window.db) { alert('Sem conexão com Firebase.'); return; }
+        const tipo = document.getElementById('adminTipoSenha').value;
+        const qtd  = parseInt(document.getElementById('adminQtdSenhas').value) || 1;
+        const configs = {
+            venda:    { maxUsos:10, maxPdfs:3, dias:365 },
+            presente: { maxUsos:10, maxPdfs:3, dias:365 },
+            teste:    { maxUsos:3,  maxPdfs:1, dias:7   },
+            custom: {
+                maxUsos: parseInt(document.getElementById('adminCustomUsos')?.value)||10,
+                maxPdfs: parseInt(document.getElementById('adminCustomPdfs')?.value)||3,
+                dias:    parseInt(document.getElementById('adminCustomDias')?.value)||365
+            }
+        };
+        const cfg = configs[tipo];
+        const senhasGeradas = [];
+        const promises = [];
+        for (let i = 0; i < Math.min(qtd,100); i++) {
+            const key = gerarChaveAleatoria();
+            senhasGeradas.push(key);
+            promises.push(window.db.ref('licencas/' + key).set({
+                tipo: tipo,
+                status: 'ativa',
+                usos: 0,
+                maxUsos: cfg.maxUsos,
+                pdfs: 0,
+                maxPdfs: cfg.maxPdfs,
+                validade: Date.now() + cfg.dias * 86400000,
+                criada: Date.now()
+            }));
+        }
+        Promise.all(promises).then(() => {
+            const el = document.getElementById('adminSenhasGeradas');
+            el.innerHTML = '<b style="color:#fff;">✅ ' + senhasGeradas.length + ' senha(s) gerada(s):</b><br>' +
+                senhasGeradas.map(s => `<span style="cursor:pointer;background:#111;border:1px solid #333;padding:2px 6px;border-radius:4px;display:inline-block;margin:2px;" onclick="navigator.clipboard.writeText('${s}')">${s} 📋</span>`).join('');
+            adminCarregarDados();
+        });
+    }
+
+    function gerarChaveAleatoria() {
+        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+        const seg = n => Array.from({length:n}, () => chars[Math.floor(Math.random()*chars.length)]).join('');
+        return 'DV-' + seg(4) + '-' + seg(4);
+    }
+
+    function adminCopiarSenha(key) {
+        navigator.clipboard.writeText(key).then(() => alert('Senha copiada: ' + key));
+    }
+
+    function adminToggleBloquear(key, status) {
+        const novoStatus = status === 'bloqueada' ? 'ativa' : 'bloqueada';
+        window.db?.ref('licencas/' + key).update({ status: novoStatus }).then(() => adminCarregarDados());
+    }
+
+    function adminResponder(msgId) {
+        const resp = document.getElementById('rep_' + msgId)?.value.trim();
+        if (!resp) return;
+        window.db?.ref('mensagens/' + msgId).update({ resposta: resp, lida: true }).then(() => adminCarregarDados());
+    }
+
+    function adminMarcarLida(msgId) {
+        window.db?.ref('mensagens/' + msgId).update({ lida: true }).then(() => adminCarregarDados());
+    }
+
+    function adminEnviarProp() {
+        const msg = document.getElementById('adminPropMsg').value.trim();
+        if (!msg) return;
+        const st = document.getElementById('adminPropStatus');
+        st.innerHTML = 'Publicando...'; st.style.color='#737373';
+        window.db?.ref('propaganda/ativa').set({ msg: msg, ts: Date.now() }).then(() => {
+            st.innerHTML = '✅ Publicado para todos os usuários.'; st.style.color='#4ade80';
+            document.getElementById('adminPropMsg').value = '';
+        });
+    }
+
+    // ════════════════════════════════════════════════
+    // PROPAGANDA — verificar ao abrir app
+    // ════════════════════════════════════════════════
+    function verificarPropaganda() {
+        if (!window.db) return;
+        const lastTs = parseInt(localStorage.getItem('sep_prop_ts') || '0');
+        window.db.ref('propaganda/ativa').once('value').then(snap => {
+            const d = snap.val();
+            if (d && d.ts > lastTs) {
+                document.getElementById('avisoPropsTexto').innerText = d.msg;
+                document.getElementById('avisoProps').style.display = 'block';
+                localStorage.setItem('sep_prop_ts', d.ts);
+            }
+        });
+    }
+
+    // ════════════════════════════════════════════════
+    // Custom fields toggle
+    // ════════════════════════════════════════════════
+    document.addEventListener('DOMContentLoaded', function() {
+        const sel = document.getElementById('adminTipoSenha');
+        if (sel) sel.addEventListener('change', function() {
+            const cf = document.getElementById('adminCustomFields');
+            if (cf) cf.style.display = this.value === 'custom' ? 'flex' : 'none';
+        });
+    });
+
+    // Ajusta padding ao redimensionar
+    window.addEventListener('resize', function() {
+        var h = document.querySelector('header');
+        if (h && document.getElementById('mainApp').style.display !== 'none')
+            document.body.style.paddingTop = (h.offsetHeight + 8) + 'px';
+    });
+
+    // Inicializar contador demo ao carregar
+    document.addEventListener('DOMContentLoaded', function() {
+        atualizarContadorDemo();
+        popularSelectTarifas();
+    });
+
+    // ════════════════════════════════════════════════
+    // PWA SERVICE WORKER — cache offline
+    // ════════════════════════════════════════════════
+    // ════════════════════════════════════════════════
+    // PROTEÇÃO BÁSICA ANTI-INSPEÇÃO
+    // Detecta DevTools e bloqueia visualização do set
+    // ════════════════════════════════════════════════
+    (function() {
+        var devtools = false;
+        var threshold = 160;
+        setInterval(function() {
+            if (window.outerWidth - window.innerWidth > threshold ||
+                window.outerHeight - window.innerHeight > threshold) {
+                if (!devtools) {
+                    devtools = true;
+                    if (document.getElementById('mainApp') &&
+                        document.getElementById('mainApp').style.display !== 'none') {
+                        document.getElementById('mainApp').style.filter = 'blur(8px)';
+                        document.getElementById('mainApp').style.pointerEvents = 'none';
+                    }
+                }
+            } else {
+                if (devtools) {
+                    devtools = false;
+                    if (document.getElementById('mainApp')) {
+                        document.getElementById('mainApp').style.filter = '';
+                        document.getElementById('mainApp').style.pointerEvents = '';
+                    }
+                }
+            }
+        }, 500);
+    })();
+
+    // PWA: Service Worker ativo via hosting HTTPS (não via blob://)
+</script>
+</body>
+</html>
