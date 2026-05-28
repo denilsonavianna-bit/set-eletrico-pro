@@ -1076,6 +1076,9 @@
         localStorage.setItem(DEMO_KEY, uses);
         isDemo = true;
         licenseKey = null;
+        localStorage.setItem('sep_session_demo', 'true');
+        localStorage.removeItem('sep_session_master');
+        localStorage.removeItem('sep_session_key');
         abrirApp();
         atualizarContadorDemo();
     }
@@ -1102,6 +1105,9 @@
         // Chave master local — acesso total (emergência/admin)
         if (typed === MASTER_KEY) {
             isDemo = false; licenseKey = MASTER_KEY;
+            localStorage.setItem('sep_session_master', 'true');
+            localStorage.removeItem('sep_session_key');
+            localStorage.removeItem('sep_session_demo');
             abrirApp();
             return;
         }
@@ -1144,6 +1150,9 @@
                     licenseKey  = typed;
                     licenseData = { ...data, usos: novosUsos };
                     isDemo      = false;
+                    localStorage.setItem('sep_session_key', typed);
+                    localStorage.removeItem('sep_session_master');
+                    localStorage.removeItem('sep_session_demo');
                     abrirApp();
                 });
             })
@@ -1904,6 +1913,15 @@
         document.getElementById('painelAdmin').style.display = 'none';
     }
 
+    function fazerLogout() {
+        if (confirm('Sair e trocar de conta?')) {
+            localStorage.removeItem('sep_session_master');
+            localStorage.removeItem('sep_session_key');
+            localStorage.removeItem('sep_session_demo');
+            location.reload();
+        }
+    }
+
     function abrirPainelAdmin() {
         document.getElementById('painelAdmin').style.display = 'block';
         adminCarregarDados();
@@ -2079,7 +2097,59 @@
     document.addEventListener('DOMContentLoaded', function() {
         atualizarContadorDemo();
         popularSelectTarifas();
+        tentarLoginAutomatico();
     });
+
+    // AUTO-LOGIN — recupera sessao salva no dispositivo
+    function tentarLoginAutomatico() {
+        // 1. Verificar chave master salva
+        var savedMaster = localStorage.getItem('sep_session_master');
+        if (savedMaster === 'true') {
+            isDemo = false;
+            licenseKey = MASTER_KEY;
+            abrirApp();
+            return;
+        }
+        // 2. Verificar licenca salva
+        var savedKey = localStorage.getItem('sep_session_key');
+        if (savedKey) {
+            var cached = localStorage.getItem('sep_lic_' + savedKey);
+            if (cached) {
+                var data = JSON.parse(cached);
+                if (data.status !== 'bloqueada' && data.usos < data.maxUsos) {
+                    licenseKey  = savedKey;
+                    licenseData = data;
+                    isDemo      = false;
+                    abrirApp();
+                    return;
+                }
+            }
+            // Tentar validar online
+            if (window.db) {
+                window.db.ref('licencas/' + savedKey).once('value').then(function(snap) {
+                    var data = snap.val();
+                    if (data && data.status !== 'bloqueada' && data.usos < data.maxUsos) {
+                        licenseKey  = savedKey;
+                        licenseData = data;
+                        isDemo      = false;
+                        localStorage.setItem('sep_lic_' + savedKey, JSON.stringify(data));
+                        abrirApp();
+                    }
+                }).catch(function() {});
+            }
+            return;
+        }
+        // 3. Verificar modo demo ativo
+        var savedDemo = localStorage.getItem('sep_session_demo');
+        if (savedDemo === 'true') {
+            var uses = parseInt(localStorage.getItem('sep_demo_uses') || '0');
+            if (uses < DEMO_MAX) {
+                isDemo = true;
+                licenseKey = null;
+                abrirApp();
+            }
+        }
+    }
 
     // ════════════════════════════════════════════════
     // PWA SERVICE WORKER — cache offline
